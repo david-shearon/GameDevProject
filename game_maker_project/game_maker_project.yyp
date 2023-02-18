@@ -10,6 +10,7 @@
     {"id":{"name":"spr_grass_cobble_end","path":"sprites/spr_grass_cobble_end/spr_grass_cobble_end.yy",},"order":1,},
     {"id":{"name":"spr_grass_cobble_T","path":"sprites/spr_grass_cobble_T/spr_grass_cobble_T.yy",},"order":4,},
     {"id":{"name":"spr_tree_grass_cobble_turn","path":"sprites/spr_tree_grass_cobble_turn/spr_tree_grass_cobble_turn.yy",},"order":10,},
+    {"id":{"name":"map_generation","path":"scripts/map_generation/map_generation.yy",},"order":0,},
     {"id":{"name":"spr_all_grass","path":"sprites/spr_all_grass/spr_all_grass.yy",},"order":0,},
     {"id":{"name":"spr_grass_cobble_intersection","path":"sprites/spr_grass_cobble_intersection/spr_grass_cobble_intersection.yy",},"order":2,},
     {"id":{"name":"spr_tree_grass_cobble_intersection","path":"sprites/spr_tree_grass_cobble_intersection/spr_tree_grass_cobble_intersection.yy",},"order":7,},
