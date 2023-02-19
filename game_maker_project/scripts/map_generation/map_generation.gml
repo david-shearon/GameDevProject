@@ -3,8 +3,13 @@
 function map_generation(){
 	randomize();
 	
-	global.map_tile_width = 25;
-	global.map_tile_height = 6;
+	var MAP_DENSITY = 5;
+	
+	global.map_tile_width = 34;
+	global.map_tile_height = 15;
+	var start_y = floor(global.map_tile_height / 2);
+	var map_tile_len_min = global.map_tile_width * MAP_DENSITY;
+	var count = 0;
 	
 	//create all tile types
 	enum tileTypes{
@@ -34,7 +39,9 @@ function map_generation(){
 	}
 	
 	var dead_end = true;
-	while(dead_end == true){
+	while(dead_end == true || count < map_tile_len_min){
+		
+		count = 0;
 		dead_end = false;
 		//initialize map
 		for(var i = 0; i <= global.map_tile_width + 1; i++){
@@ -66,9 +73,9 @@ function map_generation(){
 			}
 		}
 							
-		current_tile = global.tile_map[1, 3];
-		global.tile_map[1, 3].tile = tileTypes.CLAIMED;
-		global.tile_map[0, 3].tile = tileTypes.LEFT_RIGHT_STRAIGHT;
+		current_tile = global.tile_map[1, start_y];
+		global.tile_map[1, start_y].tile = tileTypes.CLAIMED;
+		global.tile_map[0, start_y].tile = tileTypes.LEFT_RIGHT_STRAIGHT;
 		
 		while(current_tile.x_coord != global.map_tile_width || dead_end){
 			//add available options to random list
@@ -91,7 +98,7 @@ function map_generation(){
 				global.tile_map[current_tile.x_coord - 1, current_tile.y_coord].tile == tileTypes.RIGHT_END){
 			
 					ds_list_add(from_list, "LEFT");
-					show_debug_message("FROM LEFT");
+					//show_debug_message("FROM LEFT");
 			}
 		
 			if(global.tile_map[current_tile.x_coord + 1, current_tile.y_coord].tile == tileTypes.UNCLAIMED){ //right
@@ -108,7 +115,7 @@ function map_generation(){
 				global.tile_map[current_tile.x_coord + 1, current_tile.y_coord].tile == tileTypes.LEFT_END){
 			
 					ds_list_add(from_list, "RIGHT");
-					show_debug_message("FROM RIGHT");
+					//show_debug_message("FROM RIGHT");
 			}
 		
 			if(global.tile_map[current_tile.x_coord, current_tile.y_coord - 1].tile == tileTypes.UNCLAIMED){ //up
@@ -125,7 +132,7 @@ function map_generation(){
 				global.tile_map[current_tile.x_coord, current_tile.y_coord - 1].tile == tileTypes.DOWN_END){
 				
 					ds_list_add(from_list, "UP");	
-					show_debug_message("FROM UP");		
+					//show_debug_message("FROM UP");		
 			}
 		
 			if(global.tile_map[current_tile.x_coord, current_tile.y_coord + 1].tile == tileTypes.UNCLAIMED){ //down
@@ -142,7 +149,7 @@ function map_generation(){
 				global.tile_map[current_tile.x_coord, current_tile.y_coord + 1].tile == tileTypes.UP_END){
 				
 					ds_list_add(from_list, "DOWN");	
-					show_debug_message("FROM DOWN");		
+					//show_debug_message("FROM DOWN");		
 			}
 				
 			//show_debug_message("CURRENT: x:" + string(current_tile.x_coord) + " y: " + string(current_tile.y_coord));
@@ -152,7 +159,7 @@ function map_generation(){
 			//show_debug_message("NEXT: " + string(next_tile_dir));
 			
 			if(ds_list_size(option_list) == 0){
-				show_debug_message("CORNERED!!!***************************************************");
+				//show_debug_message("CORNERED!!!***************************************************");
 				next_tile = global.tile_map[current_tile.x_coord, current_tile.y_coord];
 				dead_end = true;
 				break;
@@ -232,6 +239,7 @@ function map_generation(){
 			ds_list_destroy(option_list);	
 			ds_list_destroy(from_list);		
 			ds_list_destroy(full_dir_list);
+			count++;
 		}
 	}
 }
