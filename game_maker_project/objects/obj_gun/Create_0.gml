@@ -27,7 +27,8 @@ function fire_gun(x_start, y_start, shoot_direction, fire_key) {
 		// Create the bullet
 		var currBullet = instance_create_layer(x_start, y_start, "BulletLayer", bullet);
 	
-		// TODO: Set the bullets stats
+		// Set the bullets stats
+		currBullet.damage = damage;
 	
 		// Use accuracy to find direction
 		var angleRange = ((1-accuracy/100)*45)*(min(bullet_count/10, 1));
