@@ -13,8 +13,8 @@ if (array_length(targets_hit) >= pierce_count) {
 	instance_destroy(id);
 }
 
-// Increment pierce counter
-pierce_count++;
+// Reduce damage after pierce
+damage *= pierce_mult;
 
 // Add this object to the targets hit list
 targets_hit[array_length(targets_hit)] = other.id;

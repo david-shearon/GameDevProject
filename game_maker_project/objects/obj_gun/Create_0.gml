@@ -29,9 +29,11 @@ function fire_gun(x_start, y_start, shoot_direction, fire_key) {
 	
 		// Set the bullets stats
 		currBullet.damage = damage;
+		currBullet.pierce_count = pierce_count;
+		currBullet.pierce_mult = pierce_mult;
 	
 		// Use accuracy to find direction
-		var angleRange = ((1-accuracy/100)*45)*(min(bullet_count/10, 1));
+		var angleRange = ((1-accuracy)*45)*(min(bullet_count/10, 1));
 		shoot_direction = shoot_direction + random_range(-angleRange, angleRange);
 	
 		// Fire the bullet
