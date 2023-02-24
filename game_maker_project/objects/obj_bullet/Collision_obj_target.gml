@@ -1,3 +1,4 @@
+/*
 // Check that we haven't hit this target before
 for (var i = 0; i < array_length(targets_hit); i++) {
 	if (targets_hit[i] == other.id) {
@@ -18,3 +19,4 @@ damage *= pierce_mult;
 
 // Add this object to the targets hit list
 targets_hit[array_length(targets_hit)] = other.id;
+*/
