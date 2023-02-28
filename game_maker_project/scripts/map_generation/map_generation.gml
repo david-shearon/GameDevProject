@@ -1,14 +1,14 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function map_generation(){
-	randomize();
+function map_generation(map_tile_width, map_tile_height, start_tile_x, start_tile_y, MAP_DENSITY){
+	//randomize();
 	
-	var MAP_DENSITY = 5;
+	//var MAP_DENSITY = 2;
 	
-	global.map_tile_width = 34;
-	global.map_tile_height = 15;
-	var start_y = floor(global.map_tile_height / 2);
-	var map_tile_len_min = global.map_tile_width * MAP_DENSITY;
+	//global.map_tile_width = 15;
+	//global.map_tile_height = 10;
+	
+	var map_tile_len_min = map_tile_width * MAP_DENSITY;
 	var count = 0;
 	
 	//create all tile types
@@ -44,9 +44,9 @@ function map_generation(){
 		count = 0;
 		dead_end = false;
 		//initialize map
-		for(var i = 0; i <= global.map_tile_width + 1; i++){
-			for(var j = 0; j <= global.map_tile_height + 1; j++){
-				if(i == 0 || j == 0 || j == global.map_tile_height + 1){
+		for(var i = 0; i <= map_tile_width + 1; i++){
+			for(var j = 0; j <= map_tile_height + 1; j++){
+				if(i == 0 || j == 0 || j == map_tile_height + 1){
 					//So you can't go off the map.
 					global.tile_map[i, j] =
 					{
@@ -54,7 +54,7 @@ function map_generation(){
 						y_coord: j,	//height
 						tile: tileTypes.MAP_BORDER
 					}	
-				} else if(i == global.map_tile_width + 1) {
+				} else if(i == map_tile_width + 1) {
 					global.tile_map[i, j] =
 					{
 						x_coord: i, //width
@@ -73,11 +73,11 @@ function map_generation(){
 			}
 		}
 							
-		current_tile = global.tile_map[1, start_y];
-		global.tile_map[1, start_y].tile = tileTypes.CLAIMED;
-		global.tile_map[0, start_y].tile = tileTypes.LEFT_RIGHT_STRAIGHT;
+		current_tile = global.tile_map[start_tile_x, start_tile_y];
+		global.tile_map[start_tile_x, start_tile_y].tile = tileTypes.CLAIMED;
+		global.tile_map[start_tile_x - 1, start_tile_y].tile = tileTypes.LEFT_RIGHT_STRAIGHT;
 		
-		while(current_tile.x_coord != global.map_tile_width || dead_end){
+		while(current_tile.x_coord != map_tile_width || dead_end){
 			//add available options to random list
 			option_list = ds_list_create();
 			from_list = ds_list_create();
