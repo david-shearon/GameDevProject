@@ -1,9 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_testTarget",
+  "name": "obj_testEnemy",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
@@ -13,8 +12,8 @@
     "path": "folders/Objects/Test Objects.yy",
   },
   "parentObjectId": {
-    "name": "obj_target",
-    "path": "objects/obj_target/obj_target.yy",
+    "name": "obj_enemy",
+    "path": "objects/obj_enemy/obj_enemy.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -32,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_testTarget",
-    "path": "sprites/spr_testTarget/spr_testTarget.yy",
+    "name": "spr_testEnemy",
+    "path": "sprites/spr_testEnemy/spr_testEnemy.yy",
   },
   "spriteMaskId": null,
   "visible": true,
