@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function map_draw_current(map_x, map_y){
 	if(global.tile_map[map_x, map_y].tile != tileTypes.UNCLAIMED){
-		var new_tile = instance_create_layer(902, 902, "Instances", obj_generic_map);
+		var new_tile = instance_create_layer(902, 902, "Map", obj_generic_map);
 		switch(global.tile_map[map_x, map_y].tile){
 			case tileTypes.UP_LEFT_TURN:
 				new_tile.sprite_index = spr_tree_grass_cobble_turn;
