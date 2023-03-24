@@ -19,6 +19,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"spr_tree_grass_cobble_intersection","order":19,"path":"sprites/spr_tree_grass_cobble_intersection/spr_tree_grass_cobble_intersection.yy",},
+    {"name":"obj_player","order":10,"path":"objects/obj_player/obj_player.yy",},
     {"name":"obj_bullet","order":3,"path":"objects/obj_bullet/obj_bullet.yy",},
     {"name":"spr_tree_grass_cobble_T","order":16,"path":"sprites/spr_tree_grass_cobble_T/spr_tree_grass_cobble_T.yy",},
     {"name":"spr_tree_grass_cobble_straight","order":15,"path":"sprites/spr_tree_grass_cobble_straight/spr_tree_grass_cobble_straight.yy",},
@@ -30,6 +31,7 @@
     {"name":"obj_enemy","order":7,"path":"objects/obj_enemy/obj_enemy.yy",},
     {"name":"spr_testplayer","order":2,"path":"sprites/spr_testplayer/spr_testplayer.yy",},
     {"name":"spr_tree_grass_cobble_turn","order":17,"path":"sprites/spr_tree_grass_cobble_turn/spr_tree_grass_cobble_turn.yy",},
+    {"name":"manage_map_change","order":3,"path":"scripts/manage_map_change/manage_map_change.yy",},
     {"name":"spr_testEnemy","order":5,"path":"sprites/spr_testEnemy/spr_testEnemy.yy",},
     {"name":"spr_tree_grass_cobble_end","order":18,"path":"sprites/spr_tree_grass_cobble_end/spr_tree_grass_cobble_end.yy",},
     {"name":"obj_testTarget","order":3,"path":"objects/obj_testTarget/obj_testTarget.yy",},

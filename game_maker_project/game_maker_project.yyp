@@ -35,6 +35,7 @@
   },
   "resources": [
     {"id":{"name":"spr_tree_grass_cobble_intersection","path":"sprites/spr_tree_grass_cobble_intersection/spr_tree_grass_cobble_intersection.yy",},"order":19,},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":10,},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":3,},
     {"id":{"name":"spr_tree_grass_cobble_T","path":"sprites/spr_tree_grass_cobble_T/spr_tree_grass_cobble_T.yy",},"order":16,},
     {"id":{"name":"spr_tree_grass_cobble_straight","path":"sprites/spr_tree_grass_cobble_straight/spr_tree_grass_cobble_straight.yy",},"order":15,},
@@ -47,6 +48,7 @@
     {"id":{"name":"spr_testplayer","path":"sprites/spr_testplayer/spr_testplayer.yy",},"order":2,},
     {"id":{"name":"spr_tree_grass_cobble_turn","path":"sprites/spr_tree_grass_cobble_turn/spr_tree_grass_cobble_turn.yy",},"order":17,},
     {"id":{"name":"spr_testbullet","path":"sprites/spr_testbullet/spr_testbullet.yy",},"order":0,},
+    {"id":{"name":"manage_map_change","path":"scripts/manage_map_change/manage_map_change.yy",},"order":3,},
     {"id":{"name":"spr_testEnemy","path":"sprites/spr_testEnemy/spr_testEnemy.yy",},"order":5,},
     {"id":{"name":"spr_tree_grass_cobble_end","path":"sprites/spr_tree_grass_cobble_end/spr_tree_grass_cobble_end.yy",},"order":18,},
     {"id":{"name":"obj_testTarget","path":"objects/obj_testTarget/obj_testTarget.yy",},"order":3,},

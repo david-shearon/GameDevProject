@@ -13,7 +13,10 @@
     "name": "Test Objects",
     "path": "folders/Objects/Test Objects.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_player",
+    "path": "objects/obj_player/obj_player.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
