@@ -1,3 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
+// Delete bullet when it leaves the room
 instance_destroy(id, false);
