@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_testbullet",
+  "name": "obj_testWall",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -10,8 +10,8 @@
     "path": "folders/Objects/Test Objects.yy",
   },
   "parentObjectId": {
-    "name": "obj_bullet",
-    "path": "objects/obj_bullet/obj_bullet.yy",
+    "name": "obj_wall",
+    "path": "objects/obj_wall/obj_wall.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_testbullet",
-    "path": "sprites/spr_testbullet/spr_testbullet.yy",
+    "name": "spr_testWall",
+    "path": "sprites/spr_testWall/spr_testWall.yy",
   },
   "spriteMaskId": null,
   "visible": true,

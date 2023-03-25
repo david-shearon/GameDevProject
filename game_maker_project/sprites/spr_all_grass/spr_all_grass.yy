@@ -48,8 +48,8 @@
   },
   "origin": 4,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Map Sprites",
+    "path": "folders/Sprites/Map Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
