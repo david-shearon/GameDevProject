@@ -1,15 +1,16 @@
-
 //sprite logic
 switch (gun.type) {
 	case gun_types.pistol:
 		sprite_index = spr_player_pistol;
-		break;
-	case gun_types.rifle:
-		sprite_index = spr_player_rifle;
+		gun_x = 73;
+		gun_y = 24;
 		break;
 	case gun_types.shotgun:
-		// TODO: Add shotgun
+		// TODO: Add shotgun sprite
+	case gun_types.rifle:
 		sprite_index = spr_player_rifle;
+		gun_x = 108;
+		gun_y = 15;
 		break;
 }
 
@@ -41,12 +42,13 @@ if (instance_exists(obj_player)) {
 }
 
 // Calculate end of the guns barrel
-var gun_dir = point_direction(0, 0, 108, 15) + direction;
-var gun_x = x + lengthdir_x(109, gun_dir);
-var gun_y = y + lengthdir_y(109, gun_dir);
+var gun_dir = point_direction(0, 0, gun_x, gun_y) + direction;
+var gun_length = point_distance(0, 0, gun_x, gun_y)
+var bullet_x = x + lengthdir_x(gun_length, gun_dir);
+var bullet_y = y + lengthdir_y(gun_length, gun_dir);
 
 // Get direction to shoot
-var shoot_dir = point_direction(gun_x, gun_y, mouse_x, mouse_y);
+var shoot_dir = point_direction(bullet_x, bullet_y, mouse_x, mouse_y);
 
 // Fire gun
-gun.fire_gun(gun_x, gun_y, shoot_dir, mb_left);
+gun.fire_gun(bullet_x, bullet_y, shoot_dir, mb_left);
