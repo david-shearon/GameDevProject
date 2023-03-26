@@ -16,3 +16,6 @@ if (player != noone && distance_to_object(player) <= range) {
 if (hp <= 0) {
     instance_destroy();
 }
+
+// Rotate to face nearest player
+image_angle = point_direction(x, y, obj_player.x, obj_player.y) + 90;
