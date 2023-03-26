@@ -78,6 +78,7 @@
     {"id":{"name":"obj_testTarget","path":"objects/obj_testTarget/obj_testTarget.yy",},"order":3,},
     {"id":{"name":"map_draw_current","path":"scripts/map_draw_current/map_draw_current.yy",},"order":2,},
     {"id":{"name":"spr_player_rifle","path":"sprites/spr_player_rifle/spr_player_rifle.yy",},"order":2,},
+    {"id":{"name":"fnt_hud","path":"fonts/fnt_hud/fnt_hud.yy",},"order":0,},
     {"id":{"name":"obj_testprojbullet","path":"objects/obj_testprojbullet/obj_testprojbullet.yy",},"order":0,},
     {"id":{"name":"obj_rifleBullet","path":"objects/obj_rifleBullet/obj_rifleBullet.yy",},"order":1,},
     {"id":{"name":"obj_huntingrifle","path":"objects/obj_huntingrifle/obj_huntingrifle.yy",},"order":4,},
