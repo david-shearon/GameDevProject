@@ -6,22 +6,31 @@ function player_move(){
 	var keyright = keyboard_check(ord("D"));
 	var keyup = keyboard_check(ord("W"));
 	var keydown = keyboard_check(ord("S"));
-
+	
 	//move logic
 	var move = keyright - keyleft;
 	var vmove = keydown - keyup;
 
 	//determining movement speed & direction
-	hsp = movSpd * move;
-	vsp = movSpd * vmove;
+	//also checking if the user is sprinting
+	if(keyboard_check(vk_shift) && sprintCD == false){
+		hsp = sprintSpd * move;
+		vsp = sprintSpd * vmove;
+		stamina -= 2;
+	} else {
+		hsp = movSpd * move;
+		vsp = movSpd * vmove;	
+	}
 
 	//moving player x and y
 	x += hsp;
 	y += vsp;
-
+	
 	// Make the gun be at the same position and direction as the player
 	gun.direction = direction;
 	gun.image_angle = direction;
 	gun.x = x;
 	gun.y = y;
+	
+	sprint_logic()
 }

@@ -6,7 +6,10 @@ switch (gun.type) {
 		gun_y = 24;
 		break;
 	case gun_types.shotgun:
-		// TODO: Add shotgun sprite
+		sprite_index = spr_player_shotgun;
+		gun_x = 108;
+		gun_y = 15;
+		break;
 	case gun_types.rifle:
 		sprite_index = spr_player_rifle;
 		gun_x = 108;
@@ -52,6 +55,7 @@ var shoot_dir = point_direction(bullet_x, bullet_y, mouse_x, mouse_y);
 
 // Fire gun
 gun.fire_gun(bullet_x, bullet_y, shoot_dir, mb_left);
+
 
 ////movement script
 //player_move()
