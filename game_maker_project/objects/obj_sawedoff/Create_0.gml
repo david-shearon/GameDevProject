@@ -1,5 +1,5 @@
 event_inherited();
 
-bullet = obj_testprojbullet;
+bullet = obj_shotgunBullet;
 
 type = gun_types.shotgun;

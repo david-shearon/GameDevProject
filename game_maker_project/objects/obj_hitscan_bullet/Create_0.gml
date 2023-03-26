@@ -1,6 +1,5 @@
 event_inherited();
 
-line_thickness = 5;
 line_color = c_orange;
 alpha = 1
 
