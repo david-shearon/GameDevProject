@@ -1,6 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+enum gun_types {
+	rifle,
+	shotgun,
+	pistol
+}
+
 global.curr_tile_x = 1;
 global.curr_tile_y = 10;
 var map_tile_width = 40;

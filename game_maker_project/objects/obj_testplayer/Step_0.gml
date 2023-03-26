@@ -1,6 +1,19 @@
 
-
 //sprite logic
+switch (gun.type) {
+	case gun_types.pistol:
+		sprite_index = spr_player_pistol;
+		break;
+	case gun_types.rifle:
+		sprite_index = spr_player_rifle;
+		break;
+	case gun_types.shotgun:
+		// TODO: Add shotgun
+		sprite_index = spr_player_rifle;
+		break;
+}
+
+/*
 if (weaponIndex == 0) {
 	sprite_index = spr_player_pistol;
 } else if (weaponIndex == 1){
@@ -8,6 +21,7 @@ if (weaponIndex == 0) {
 } else {
 	sprite_index = spr_player_knife;	
 }
+*/
 
 //change weapon logic
 if(keyboard_check(ord("1"))){

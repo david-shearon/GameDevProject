@@ -15,6 +15,8 @@ reload_cld = 0;
 // Can be replaced in the future if we want guns to have a max range
 max_dist = point_distance(0, 0, room_width, room_height);
 
+type = gun_types.pistol;
+
 // Create fire function
 function fire_gun(x_start, y_start, shoot_direction, fire_key) {
 	// Reset bullet_count if this is a new spray
