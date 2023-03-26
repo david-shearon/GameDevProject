@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_testEnemy",
-    "path": "sprites/spr_testEnemy/spr_testEnemy.yy",
+    "name": "spr_enemy_spider_purple",
+    "path": "sprites/spr_enemy_spider_purple/spr_enemy_spider_purple.yy",
   },
   "spriteMaskId": null,
   "visible": true,
