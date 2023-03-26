@@ -50,15 +50,15 @@ function fire_gun(x_start, y_start, shoot_direction, fire_key) {
 	
 			// Use accuracy to find direction
 			var angleRange = ((1-accuracy)*45)*(min(spray_count/10, 1));
-			shoot_direction = shoot_direction + random_range(-angleRange, angleRange);
+			var bullet_direction = shoot_direction + random_range(-angleRange, angleRange);
 			
 			if (hit_scan) {
 				// Find collisions
-				var endX = x + lengthdir_x(max_dist, shoot_direction);
-				var endY = y + lengthdir_y(max_dist, shoot_direction);
+				var endX = x_start + lengthdir_x(max_dist, bullet_direction);
+				var endY = y_start + lengthdir_y(max_dist, bullet_direction);
 				
 				var hit_list = ds_list_create();
-				var hit_num = collision_line_list(x, y, endX, endY, obj_target, false, false, hit_list, true);
+				var hit_num = collision_line_list(x_start, y_start, endX, endY, obj_target, false, false, hit_list, true);
 				
 				var endPos = currBullet.perform_collision(hit_list, hit_num);
 				
@@ -69,14 +69,14 @@ function fire_gun(x_start, y_start, shoot_direction, fire_key) {
 				}
 				
 				// Fire the bullet
-				currBullet.startX = x;
-				currBullet.startY = y;
+				currBullet.startX = x_start;
+				currBullet.startY = y_start;
 				currBullet.endX = endPos[0];
 				currBullet.endY = endPos[1];
 			} else {
 				// Fire the bullet
-				currBullet.direction = shoot_direction;
-				currBullet.image_angle = shoot_direction;
+				currBullet.direction = bullet_direction;
+				currBullet.image_angle = bullet_direction;
 			}
 		
 			// Increment spray_count

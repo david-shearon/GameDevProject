@@ -13,16 +13,6 @@ switch (gun.type) {
 		break;
 }
 
-/*
-if (weaponIndex == 0) {
-	sprite_index = spr_player_pistol;
-} else if (weaponIndex == 1){
-	sprite_index = spr_player_rifle
-} else {
-	sprite_index = spr_player_knife;	
-}
-*/
-
 //change weapon logic
 if(keyboard_check(ord("1"))){
 	weaponIndex = 0;	
@@ -50,6 +40,13 @@ if (instance_exists(obj_player)) {
 	player_move()
 }
 
+// Calculate end of the guns barrel
+var gun_dir = point_direction(0, 0, 108, 15) + direction;
+var gun_x = x + lengthdir_x(109, gun_dir);
+var gun_y = y + lengthdir_y(109, gun_dir);
+
+// Get direction to shoot
+var shoot_dir = point_direction(gun_x, gun_y, mouse_x, mouse_y);
 
 // Fire gun
-gun.fire_gun(x, y, direction, mb_left);
+gun.fire_gun(gun_x, gun_y, shoot_dir, mb_left);
