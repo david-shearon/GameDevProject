@@ -33,11 +33,5 @@ function player_move(){
 		image_speed = 0;
 	}
 	
-	// Make the gun be at the same position and direction as the player
-	gun.direction = direction;
-	gun.image_angle = direction;
-	gun.x = x;
-	gun.y = y;
-	
 	sprint_logic()
 }
