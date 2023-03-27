@@ -17,6 +17,7 @@ gun_x = 0;
 gun_y = 0;
 
 instance_create_layer(x, y, "GunLayer", gun);
+gun.in_inventory = true;
 
 ////player variables
 //playerHp = 100;

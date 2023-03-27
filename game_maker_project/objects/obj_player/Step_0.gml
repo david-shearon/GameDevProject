@@ -17,23 +17,27 @@ switch (gun.type) {
 		break;
 }
 
+var change_weapon = false;
 //change weapon logic
 if(keyboard_check(ord("1"))){
-	weaponIndex = 0;	
-	instance_destroy(gun);
+	weaponIndex = 0;
+	change_weapon = true;
 }
 if(keyboard_check(ord("2"))){
 	weaponIndex = 1;
-	instance_destroy(gun);
+	change_weapon = true;
 }
 if(keyboard_check(ord("3"))){
 	weaponIndex = 2;	
-	instance_destroy(gun);
+	change_weapon = true;
 }
 
-gun = weapons[weaponIndex]
-instance_create_layer(x, y, "GunLayer", gun);
-gun.in_inventory = true;
+if (change_weapon) {
+	instance_destroy(gun);
+	gun = weapons[weaponIndex]
+	instance_create_layer(x, y, "GunLayer", gun);
+	gun.in_inventory = true;
+}
 
 //turn player towards mouse cursor
 if (instance_exists(obj_player)) {
