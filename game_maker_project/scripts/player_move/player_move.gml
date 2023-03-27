@@ -26,6 +26,13 @@ function player_move(){
 	x += hsp;
 	y += vsp;
 	
+	// Check to display walking animation
+	if (move != 0 || vmove != 0) {
+		image_speed = 1;
+	} else {
+		image_speed = 0;
+	}
+	
 	// Make the gun be at the same position and direction as the player
 	gun.direction = direction;
 	gun.image_angle = direction;
