@@ -11,3 +11,6 @@ if (player != noone && distance_to_object(player) <= range) {
     x += move_x;
     y += move_y;
 }
+
+// Rotate to face nearest player
+image_angle = point_direction(x, y, obj_player.x, obj_player.y) + 90;
