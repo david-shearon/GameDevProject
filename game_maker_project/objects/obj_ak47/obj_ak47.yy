@@ -41,7 +41,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_ak47",
+    "path": "sprites/spr_ak47/spr_ak47.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

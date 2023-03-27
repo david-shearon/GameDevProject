@@ -8,4 +8,4 @@ draw_text(960, room_height - 70, "Stamina: " + string(stamina));
 //// For testing
 //draw_set_font(-1);
 //draw_set_color(c_white);
-//draw_text(40, 40, "Bullets: " + string(instance_number(obj_bullet)));
+//draw_text(40, 40, "guns: " + string(instance_number(obj_gun)));

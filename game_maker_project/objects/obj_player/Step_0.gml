@@ -33,6 +33,7 @@ if(keyboard_check(ord("3"))){
 
 gun = weapons[weaponIndex]
 instance_create_layer(x, y, "GunLayer", gun);
+gun.in_inventory = true;
 
 //turn player towards mouse cursor
 if (instance_exists(obj_player)) {

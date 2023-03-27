@@ -24,6 +24,7 @@
     {"name":"Test Sprites","order":21,"path":"folders/Sprites/Test Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Gun Sprites","order":29,"path":"folders/Sprites/Gun Sprites.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_awp","order":1,"path":"objects/obj_awp/obj_awp.yy",},
