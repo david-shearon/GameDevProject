@@ -19,12 +19,12 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Bullet Sprites","order":27,"path":"folders/Sprites/Bullet Sprites.yy",},
     {"name":"Enemy Sprites","order":28,"path":"folders/Sprites/Enemy Sprites.yy",},
+    {"name":"Gun Sprites","order":29,"path":"folders/Sprites/Gun Sprites.yy",},
     {"name":"Map Sprites","order":25,"path":"folders/Sprites/Map Sprites.yy",},
     {"name":"Player Sprites","order":26,"path":"folders/Sprites/Player Sprites.yy",},
     {"name":"Test Sprites","order":21,"path":"folders/Sprites/Test Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Gun Sprites","order":29,"path":"folders/Sprites/Gun Sprites.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_awp","order":1,"path":"objects/obj_awp/obj_awp.yy",},

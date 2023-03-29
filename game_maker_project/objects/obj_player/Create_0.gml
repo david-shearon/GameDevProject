@@ -9,7 +9,7 @@ sprintCD = false;
 
 // Gun player has
 weaponIndex = 0;
-weapons = [obj_dmr, obj_XM, obj_glock]
+weapons = [obj_ak47, obj_XM, obj_glock]
 gun = weapons[weaponIndex];
 
 // Distance from center of player to end of gun
