@@ -20,7 +20,7 @@ enum MoveDir {
 
 dir = MoveDir.NONE;
 move_to = MoveTo.NONE;
-transition_speed = 90;
+transition_speed = 50;
 
 up_avail = false;
 down_avail = false;

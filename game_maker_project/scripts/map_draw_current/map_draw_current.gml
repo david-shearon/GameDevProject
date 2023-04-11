@@ -81,7 +81,6 @@ function map_draw_current(map_x, map_y, player_move_dir){
 				break;
 		}
 		new_tile.move_to = MoveTo.CENTER;
-		//new_tile.image_alpha = 0.5;
 		
 		if(old_tile != noone){
 			if(player_move_dir == "UP"){
