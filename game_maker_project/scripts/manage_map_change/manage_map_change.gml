@@ -6,26 +6,26 @@ function manage_map_change(){
 	var movement_dir = "";
 	map_change = false;
 
-	if(player.y <= 0 && tile.up_avail){
-		player.y = room_height - 30;
+	if(player.y <= -10 && tile.up_avail){
+		//player.y = room_height - 30;
 		global.curr_tile_y -= 1;	
 		map_change = true;
 		movement_dir = "UP";	
 	}
-	else if(player.y > room_height && tile.down_avail){
-		player.y = 30;
+	else if(player.y > room_height + 10 && tile.down_avail){
+		//player.y = 30;
 		global.curr_tile_y += 1;
 		map_change = true;
 		movement_dir = "DOWN";	
 	}
-	else if(player.x < 0 && tile.left_avail){
-		player.x = room_width - 30;
+	else if(player.x < -10 && tile.left_avail){
+		//player.x = room_width - 30;
 		global.curr_tile_x -= 1;
 		map_change = true;
 		movement_dir = "LEFT";	
 	}
-	else if(player.x > room_width && tile.right_avail){
-		player.x = 30;
+	else if(player.x > room_width + 10 && tile.right_avail){
+		//player.x = 30;
 		global.curr_tile_x += 1;
 		map_change = true;
 		movement_dir = "RIGHT";	
@@ -35,4 +35,5 @@ function manage_map_change(){
 		map_draw_current(global.curr_tile_x, global.curr_tile_y, movement_dir);
 		map_change = false;
 	}
+	
 }

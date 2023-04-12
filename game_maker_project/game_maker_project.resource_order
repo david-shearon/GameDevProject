@@ -27,6 +27,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"snd_footsteps","order":1,"path":"sounds/snd_footsteps/snd_footsteps.yy",},
     {"name":"obj_awp","order":1,"path":"objects/obj_awp/obj_awp.yy",},
     {"name":"player_move","order":4,"path":"scripts/player_move/player_move.yy",},
     {"name":"spr_tree_grass_cobble_intersection","order":2,"path":"sprites/spr_tree_grass_cobble_intersection/spr_tree_grass_cobble_intersection.yy",},
@@ -37,6 +38,7 @@
     {"name":"obj_testEnemy","order":4,"path":"objects/obj_testEnemy/obj_testEnemy.yy",},
     {"name":"spr_rifleBullet","order":1,"path":"sprites/spr_rifleBullet/spr_rifleBullet.yy",},
     {"name":"spr_player_pistol","order":1,"path":"sprites/spr_player_pistol/spr_player_pistol.yy",},
+    {"name":"obj_smoke","order":15,"path":"objects/obj_smoke/obj_smoke.yy",},
     {"name":"obj_gun","order":2,"path":"objects/obj_gun/obj_gun.yy",},
     {"name":"obj_shotgunBullet","order":2,"path":"objects/obj_shotgunBullet/obj_shotgunBullet.yy",},
     {"name":"obj_testhitscanbullet","order":5,"path":"objects/obj_testhitscanbullet/obj_testhitscanbullet.yy",},
@@ -69,6 +71,7 @@
     {"name":"obj_sawedoff","order":6,"path":"objects/obj_sawedoff/obj_sawedoff.yy",},
     {"name":"obj_mac10","order":5,"path":"objects/obj_mac10/obj_mac10.yy",},
     {"name":"sprint_logic","order":5,"path":"scripts/sprint_logic/sprint_logic.yy",},
+    {"name":"spr_smoke","order":30,"path":"sprites/spr_smoke/spr_smoke.yy",},
     {"name":"obj_glock","order":3,"path":"objects/obj_glock/obj_glock.yy",},
     {"name":"obj_generic_map","order":1,"path":"objects/obj_generic_map/obj_generic_map.yy",},
   ],

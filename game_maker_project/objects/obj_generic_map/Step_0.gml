@@ -1,9 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+player = instance_find(obj_player, 0);
 switch(dir){
 	case MoveDir.LEFT:
 		x -= transition_speed;
+		player.x -= transition_speed / 2;
 		if(move_to == MoveTo.CENTER && x - transition_speed <= room_width / 2){
 			move_to = MoveTo.NONE;
 			dir = MoveDir.NONE;
@@ -14,6 +16,7 @@ switch(dir){
 		break;
 	case MoveDir.RIGHT:
 		x += transition_speed;
+		player.x += transition_speed / 2;
 		if(move_to == MoveTo.CENTER && x + transition_speed >= room_width / 2){
 			move_to = MoveTo.NONE;
 			dir = MoveDir.NONE;			
@@ -24,6 +27,7 @@ switch(dir){
 		break;
 	case MoveDir.UP:
 		y -= transition_speed;
+		player.y -= transition_speed / 2;
 		if(move_to == MoveTo.CENTER && y - transition_speed <= room_width / 2){
 			move_to = MoveTo.NONE;
 			dir = MoveDir.NONE;			
@@ -34,6 +38,7 @@ switch(dir){
 		break;
 	case MoveDir.DOWN:
 		y += transition_speed;
+		player.y += transition_speed / 2;
 		if(move_to == MoveTo.CENTER && y + transition_speed >= room_width / 2){
 			move_to = MoveTo.NONE;
 			dir = MoveDir.NONE;			
