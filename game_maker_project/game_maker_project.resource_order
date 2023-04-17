@@ -39,6 +39,7 @@
     {"name":"spr_rifleBullet","order":1,"path":"sprites/spr_rifleBullet/spr_rifleBullet.yy",},
     {"name":"spr_player_pistol","order":1,"path":"sprites/spr_player_pistol/spr_player_pistol.yy",},
     {"name":"obj_smoke","order":15,"path":"objects/obj_smoke/obj_smoke.yy",},
+    {"name":"spr_all_cobble","order":6,"path":"sprites/spr_all_cobble/spr_all_cobble.yy",},
     {"name":"obj_gun","order":2,"path":"objects/obj_gun/obj_gun.yy",},
     {"name":"obj_shotgunBullet","order":2,"path":"objects/obj_shotgunBullet/obj_shotgunBullet.yy",},
     {"name":"obj_testhitscanbullet","order":5,"path":"objects/obj_testhitscanbullet/obj_testhitscanbullet.yy",},
