@@ -22,3 +22,4 @@ instance_create_layer(room_width, random(room_height), "SmokeLayer", obj_smoke);
 map_generation(map_tile_width, map_tile_height, global.curr_tile_x, global.curr_tile_y, density);
 
 map_draw_current(global.curr_tile_x, global.curr_tile_y, "RIGHT");
+//map_draw_full(global.curr_tile_x, global.curr_tile_y, map_tile_width, map_tile_height);

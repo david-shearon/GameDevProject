@@ -79,6 +79,9 @@ function map_draw_current(map_x, map_y, player_move_dir){
 				new_tile.up_avail = true;
 				new_tile.down_avail = true;
 				break;
+			case tileTypes.ALL_COBBLE:
+				new_tile.sprite_index = spr_all_cobble;
+				break;
 		}
 		new_tile.move_to = MoveTo.CENTER;
 		

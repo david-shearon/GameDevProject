@@ -35,7 +35,8 @@ function map_generation(map_tile_width, map_tile_height, start_tile_x, start_til
 		RIGHT_END,			//path on right
 		DOWN_END,			//path on bottom
 		
-		FOUR_WAY
+		FOUR_WAY,
+		ALL_COBBLE
 	}
 	
 	var dead_end = true;
@@ -46,7 +47,7 @@ function map_generation(map_tile_width, map_tile_height, start_tile_x, start_til
 		//initialize map
 		for(var i = 0; i <= map_tile_width + 1; i++){
 			for(var j = 0; j <= map_tile_height + 1; j++){
-				if(i == 0 || j == 0 || j == map_tile_height + 1){
+				if((i == 0 || j == 0 || j == map_tile_height) && i != map_tile_width){
 					//So you can't go off the map.
 					global.tile_map[i, j] =
 					{
@@ -59,7 +60,7 @@ function map_generation(map_tile_width, map_tile_height, start_tile_x, start_til
 					{
 						x_coord: i, //width
 						y_coord: j,	//height
-						tile: tileTypes.LEFT_T
+						tile: tileTypes.ALL_COBBLE
 					}	
 				} else {
 					//unclaimed map types
@@ -95,7 +96,8 @@ function map_generation(map_tile_width, map_tile_height, start_tile_x, start_til
 				global.tile_map[current_tile.x_coord - 1, current_tile.y_coord].tile == tileTypes.RIGHT_T || 
 				global.tile_map[current_tile.x_coord - 1, current_tile.y_coord].tile == tileTypes.DOWN_T || 
 				global.tile_map[current_tile.x_coord - 1, current_tile.y_coord].tile == tileTypes.FOUR_WAY || 
-				global.tile_map[current_tile.x_coord - 1, current_tile.y_coord].tile == tileTypes.RIGHT_END){
+				global.tile_map[current_tile.x_coord - 1, current_tile.y_coord].tile == tileTypes.RIGHT_END ||
+				global.tile_map[current_tile.x_coord - 1, current_tile.y_coord].tile == tileTypes.ALL_COBBLE){
 			
 					ds_list_add(from_list, "LEFT");
 					//show_debug_message("FROM LEFT");
@@ -112,7 +114,8 @@ function map_generation(map_tile_width, map_tile_height, start_tile_x, start_til
 				global.tile_map[current_tile.x_coord + 1, current_tile.y_coord].tile == tileTypes.LEFT_T || 
 				global.tile_map[current_tile.x_coord + 1, current_tile.y_coord].tile == tileTypes.DOWN_T || 
 				global.tile_map[current_tile.x_coord + 1, current_tile.y_coord].tile == tileTypes.FOUR_WAY || 
-				global.tile_map[current_tile.x_coord + 1, current_tile.y_coord].tile == tileTypes.LEFT_END){
+				global.tile_map[current_tile.x_coord + 1, current_tile.y_coord].tile == tileTypes.LEFT_END ||
+				global.tile_map[current_tile.x_coord + 1, current_tile.y_coord].tile == tileTypes.ALL_COBBLE){
 			
 					ds_list_add(from_list, "RIGHT");
 					//show_debug_message("FROM RIGHT");
@@ -129,7 +132,8 @@ function map_generation(map_tile_width, map_tile_height, start_tile_x, start_til
 				global.tile_map[current_tile.x_coord, current_tile.y_coord - 1].tile == tileTypes.LEFT_T || 
 				global.tile_map[current_tile.x_coord, current_tile.y_coord - 1].tile == tileTypes.RIGHT_T || 
 				global.tile_map[current_tile.x_coord, current_tile.y_coord - 1].tile == tileTypes.FOUR_WAY || 
-				global.tile_map[current_tile.x_coord, current_tile.y_coord - 1].tile == tileTypes.DOWN_END){
+				global.tile_map[current_tile.x_coord, current_tile.y_coord - 1].tile == tileTypes.DOWN_END ||
+				global.tile_map[current_tile.x_coord, current_tile.y_coord - 1].tile == tileTypes.ALL_COBBLE){
 				
 					ds_list_add(from_list, "UP");	
 					//show_debug_message("FROM UP");		
@@ -146,7 +150,8 @@ function map_generation(map_tile_width, map_tile_height, start_tile_x, start_til
 				global.tile_map[current_tile.x_coord, current_tile.y_coord + 1].tile == tileTypes.LEFT_T || 
 				global.tile_map[current_tile.x_coord, current_tile.y_coord + 1].tile == tileTypes.RIGHT_T || 
 				global.tile_map[current_tile.x_coord, current_tile.y_coord + 1].tile == tileTypes.FOUR_WAY || 
-				global.tile_map[current_tile.x_coord, current_tile.y_coord + 1].tile == tileTypes.UP_END){
+				global.tile_map[current_tile.x_coord, current_tile.y_coord + 1].tile == tileTypes.UP_END ||
+				global.tile_map[current_tile.x_coord, current_tile.y_coord + 1].tile == tileTypes.ALL_COBBLE){
 				
 					ds_list_add(from_list, "DOWN");	
 					//show_debug_message("FROM DOWN");		

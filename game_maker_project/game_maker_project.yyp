@@ -60,6 +60,7 @@
     {"id":{"name":"spr_rifleBullet","path":"sprites/spr_rifleBullet/spr_rifleBullet.yy",},},
     {"id":{"name":"spr_player_pistol","path":"sprites/spr_player_pistol/spr_player_pistol.yy",},},
     {"id":{"name":"obj_smoke","path":"objects/obj_smoke/obj_smoke.yy",},},
+    {"id":{"name":"spr_all_cobble","path":"sprites/spr_all_cobble/spr_all_cobble.yy",},},
     {"id":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},},
     {"id":{"name":"obj_shotgunBullet","path":"objects/obj_shotgunBullet/obj_shotgunBullet.yy",},},
     {"id":{"name":"spr_player_knife","path":"sprites/spr_player_knife/spr_player_knife.yy",},},
