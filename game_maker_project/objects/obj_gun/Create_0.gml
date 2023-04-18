@@ -1,3 +1,5 @@
+event_inherited();
+
 // Variable to track the cooldown of the weapon
 cld = 0;
 
@@ -16,8 +18,6 @@ reload_cld = 0;
 max_dist = point_distance(0, 0, room_width, room_height);
 
 type = gun_types.pistol;
-
-in_inventory = false;
 
 // Create fire function
 function fire_gun(x_start, y_start, shoot_direction, fire_key) {
