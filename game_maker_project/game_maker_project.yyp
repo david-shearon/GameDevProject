@@ -92,6 +92,7 @@
     {"id":{"name":"obj_rifleBullet","path":"objects/obj_rifleBullet/obj_rifleBullet.yy",},},
     {"id":{"name":"obj_huntingrifle","path":"objects/obj_huntingrifle/obj_huntingrifle.yy",},},
     {"id":{"name":"obj_testplayer","path":"objects/obj_testplayer/obj_testplayer.yy",},},
+    {"id":{"name":"find_collision","path":"scripts/find_collision/find_collision.yy",},},
     {"id":{"name":"spr_testTarget","path":"sprites/spr_testTarget/spr_testTarget.yy",},},
     {"id":{"name":"obj_sniperBullet","path":"objects/obj_sniperBullet/obj_sniperBullet.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
