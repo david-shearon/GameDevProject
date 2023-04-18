@@ -64,6 +64,7 @@
     {"name":"obj_rifleBullet","order":1,"path":"objects/obj_rifleBullet/obj_rifleBullet.yy",},
     {"name":"obj_huntingrifle","order":4,"path":"objects/obj_huntingrifle/obj_huntingrifle.yy",},
     {"name":"obj_testplayer","order":2,"path":"objects/obj_testplayer/obj_testplayer.yy",},
+    {"name":"find_collision","order":6,"path":"scripts/find_collision/find_collision.yy",},
     {"name":"spr_testTarget","order":3,"path":"sprites/spr_testTarget/spr_testTarget.yy",},
     {"name":"obj_sniperBullet","order":3,"path":"objects/obj_sniperBullet/obj_sniperBullet.yy",},
     {"name":"obj_wall","order":7,"path":"objects/obj_wall/obj_wall.yy",},

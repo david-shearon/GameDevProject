@@ -6,6 +6,7 @@ atk = 10; // enemy will have 10atk by default
 spd = 3; // enemy will move at a default speed of 3
 gun = noone; // the gun the enemy is holding
 range = 1000; // visual range of the enemy
+cld = .5 // number of seconds between attacks
 
 // Appearance
 // sprite_index = 0; // the current frame of the animation

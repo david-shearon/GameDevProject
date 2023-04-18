@@ -62,12 +62,15 @@ function fire_gun(x_start, y_start, shoot_direction, fire_key) {
 				var hit_list = ds_list_create();
 				var hit_num = collision_line_list(x_start, y_start, endX, endY, obj_target, false, false, hit_list, true);
 				
-				var endPos = currBullet.perform_collision(hit_list, hit_num);
+				var endObj = currBullet.perform_collision(hit_list, hit_num);
 				
 				ds_list_destroy(hit_list);
 				
-				if (is_undefined(endPos)) {
+				var endPos;
+				if (is_undefined(endObj)) {
 					endPos = [endX, endY];
+				} else {
+					endPos = find_collision(x_start, y_start, bullet_direction, max_dist, endObj);
 				}
 				
 				// Fire the bullet

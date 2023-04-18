@@ -18,7 +18,7 @@ function perform_collision(coll_objs, coll_num) {
 		
 		// Check if we hit a wall
 		if (object_get_parent(coll_objs[| i].object_index) == obj_wall) {
-			return [coll_objs[| i].x, coll_objs[| i].y];
+			return coll_objs[| i].id;
 		}
 
 		// Damage calculation
@@ -26,7 +26,7 @@ function perform_collision(coll_objs, coll_num) {
 
 		// Check if bullet reached its pierce_count
 		if (array_length(targets_hit) >= pierce_count) {
-			return [coll_objs[| i].x, coll_objs[| i].y];
+			return coll_objs[| i].id;
 		}
 
 		// Reduce damage after pierce
