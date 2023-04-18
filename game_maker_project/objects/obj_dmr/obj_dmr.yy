@@ -41,7 +41,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_dmr",
+    "path": "sprites/spr_dmr/spr_dmr.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

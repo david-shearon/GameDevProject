@@ -41,7 +41,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_mac10",
+    "path": "sprites/spr_mac10/spr_mac10.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

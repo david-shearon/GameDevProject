@@ -41,7 +41,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_XM",
+    "path": "sprites/spr_XM/spr_XM.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

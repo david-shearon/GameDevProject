@@ -41,7 +41,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_glock",
+    "path": "sprites/spr_glock/spr_glock.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
