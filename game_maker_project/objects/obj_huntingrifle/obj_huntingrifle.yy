@@ -41,7 +41,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_huntingrifle",
+    "path": "sprites/spr_huntingrifle/spr_huntingrifle.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

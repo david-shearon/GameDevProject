@@ -41,7 +41,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_sawedoff",
+    "path": "sprites/spr_sawedoff/spr_sawedoff.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

@@ -5,6 +5,7 @@ movSpd = 5;
 sprintSpd = 10;
 stamina = MAX_SPRINT_TIME;
 sprintCD = false;
+pickupRad = 150;
 
 
 // Gun player has

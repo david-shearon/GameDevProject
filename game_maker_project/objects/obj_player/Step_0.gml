@@ -39,6 +39,18 @@ if (change_weapon) {
 	gun.in_inventory = true;
 }
 
+// Check item pick up
+if (keyboard_check_pressed(ord("E"))) {
+	var item = find_object(x, y, pickupRad, obj_item, gun);
+	if (item != noone) {
+		instance_create_layer(x, y, "GunLayer", gun);
+		gun = item.object_index;
+		instance_create_layer(x, y, "GunLayer", gun);
+		gun.in_inventory = true;
+		instance_destroy(item);
+	}
+}
+
 //turn player towards mouse cursor
 if (instance_exists(obj_player)) {
 	var dir = point_direction(x, y, mouse_x, mouse_y);
@@ -49,8 +61,17 @@ if (instance_exists(obj_player)) {
 	player_move()
 }
 
+// Calculate end of the guns barrel
+var gun_dir = point_direction(0, 0, gun_x, gun_y) + direction;
+var gun_length = point_distance(0, 0, gun_x, gun_y)
+var bullet_x = x + lengthdir_x(gun_length, gun_dir);
+var bullet_y = y + lengthdir_y(gun_length, gun_dir);
+
+// Get direction to shoot
+var shoot_dir = point_direction(bullet_x, bullet_y, mouse_x, mouse_y);
+
 // Fire gun
-gun.fire_gun(x, y, direction, mb_left);
+gun.fire_gun(bullet_x, bullet_y, shoot_dir, mb_left);
 
 
 ////movement script

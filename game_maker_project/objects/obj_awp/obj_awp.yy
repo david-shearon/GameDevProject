@@ -41,7 +41,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_awp",
+    "path": "sprites/spr_awp/spr_awp.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
