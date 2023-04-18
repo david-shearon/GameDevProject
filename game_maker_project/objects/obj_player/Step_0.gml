@@ -21,14 +21,17 @@ var change_weapon = false;
 //change weapon logic
 if(keyboard_check(ord("1"))){
 	weaponIndex = 0;
+	gunSound = snd_rifle;
 	change_weapon = true;
 }
 if(keyboard_check(ord("2"))){
 	weaponIndex = 1;
+	gunSound = snd_shotgun;
 	change_weapon = true;
 }
 if(keyboard_check(ord("3"))){
 	weaponIndex = 2;	
+	gunSound = snd_pistol;
 	change_weapon = true;
 }
 
@@ -71,7 +74,7 @@ var bullet_y = y + lengthdir_y(gun_length, gun_dir);
 var shoot_dir = point_direction(bullet_x, bullet_y, mouse_x, mouse_y);
 
 // Fire gun
-gun.fire_gun(bullet_x, bullet_y, shoot_dir, mb_left);
+gun.fire_gun(bullet_x, bullet_y, shoot_dir, mb_left, gunSound);
 
 
 ////movement script

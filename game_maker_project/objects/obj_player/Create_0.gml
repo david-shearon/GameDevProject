@@ -12,6 +12,7 @@ pickupRad = 150;
 weaponIndex = 0;
 weapons = [obj_dmr, obj_XM, obj_glock]
 gun = weapons[weaponIndex];
+gunSound = snd_rifle;
 
 // Distance from center of player to end of gun
 gun_x = 0;
