@@ -55,6 +55,7 @@
     {"id":{"name":"spr_pistolBullet","path":"sprites/spr_pistolBullet/spr_pistolBullet.yy",},},
     {"id":{"name":"spr_tree_grass_cobble_T","path":"sprites/spr_tree_grass_cobble_T/spr_tree_grass_cobble_T.yy",},},
     {"id":{"name":"spr_enemy_spider_purple","path":"sprites/spr_enemy_spider_purple/spr_enemy_spider_purple.yy",},},
+    {"id":{"name":"spr_enemy_wolf","path":"sprites/spr_enemy_wolf/spr_enemy_wolf.yy",},},
     {"id":{"name":"spr_tree_grass_cobble_straight","path":"sprites/spr_tree_grass_cobble_straight/spr_tree_grass_cobble_straight.yy",},},
     {"id":{"name":"obj_testEnemy","path":"objects/obj_testEnemy/obj_testEnemy.yy",},},
     {"id":{"name":"spr_rifleBullet","path":"sprites/spr_rifleBullet/spr_rifleBullet.yy",},},
