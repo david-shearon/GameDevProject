@@ -39,6 +39,18 @@ if (change_weapon) {
 	gun.in_inventory = true;
 }
 
+// Check item pick up
+if (keyboard_check_pressed(ord("E"))) {
+	var item = collision_circle(x, y, pickupRad, obj_item, false, false);
+	if (item != noone) {
+		instance_create_layer(x, y, "GunLayer", gun);
+		gun = item.object_index;
+		instance_create_layer(x, y, "GunLayer", gun);
+		gun.in_inventory = true;
+		instance_destroy(item);
+	}
+}
+
 //turn player towards mouse cursor
 if (instance_exists(obj_player)) {
 	var dir = point_direction(x, y, mouse_x, mouse_y);
