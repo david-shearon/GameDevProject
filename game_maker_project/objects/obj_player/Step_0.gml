@@ -41,7 +41,7 @@ if (change_weapon) {
 
 // Check item pick up
 if (keyboard_check_pressed(ord("E"))) {
-	var item = collision_circle(x, y, pickupRad, obj_item, false, false);
+	var item = find_object(x, y, pickupRad, obj_item, gun);
 	if (item != noone) {
 		instance_create_layer(x, y, "GunLayer", gun);
 		gun = item.object_index;

@@ -72,6 +72,7 @@
     {"name":"obj_sniperBullet","order":3,"path":"objects/obj_sniperBullet/obj_sniperBullet.yy",},
     {"name":"obj_wall","order":7,"path":"objects/obj_wall/obj_wall.yy",},
     {"name":"spr_testgun","order":1,"path":"sprites/spr_testgun/spr_testgun.yy",},
+    {"name":"find_objects","order":6,"path":"scripts/find_objects/find_objects.yy",},
     {"name":"obj_testgun","order":1,"path":"objects/obj_testgun/obj_testgun.yy",},
     {"name":"obj_sawedoff","order":6,"path":"objects/obj_sawedoff/obj_sawedoff.yy",},
     {"name":"obj_mac10","order":5,"path":"objects/obj_mac10/obj_mac10.yy",},

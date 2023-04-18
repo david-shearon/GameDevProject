@@ -100,6 +100,7 @@
     {"id":{"name":"obj_sniperBullet","path":"objects/obj_sniperBullet/obj_sniperBullet.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"spr_testgun","path":"sprites/spr_testgun/spr_testgun.yy",},},
+    {"id":{"name":"find_objects","path":"scripts/find_objects/find_objects.yy",},},
     {"id":{"name":"obj_testgun","path":"objects/obj_testgun/obj_testgun.yy",},},
     {"id":{"name":"obj_sawedoff","path":"objects/obj_sawedoff/obj_sawedoff.yy",},},
     {"id":{"name":"obj_mac10","path":"objects/obj_mac10/obj_mac10.yy",},},
