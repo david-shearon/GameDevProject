@@ -45,6 +45,7 @@
   },
   "resources": [
     {"id":{"name":"spr_glock","path":"sprites/spr_glock/spr_glock.yy",},},
+    {"id":{"name":"vector2","path":"scripts/vector2/vector2.yy",},},
     {"id":{"name":"obj_awp","path":"objects/obj_awp/obj_awp.yy",},},
     {"id":{"name":"spr_sawedoff","path":"sprites/spr_sawedoff/spr_sawedoff.yy",},},
     {"id":{"name":"player_move","path":"scripts/player_move/player_move.yy",},},
@@ -82,6 +83,7 @@
     {"id":{"name":"spr_testbullet","path":"sprites/spr_testbullet/spr_testbullet.yy",},},
     {"id":{"name":"manage_map_change","path":"scripts/manage_map_change/manage_map_change.yy",},},
     {"id":{"name":"spr_testEnemy","path":"sprites/spr_testEnemy/spr_testEnemy.yy",},},
+    {"id":{"name":"spawn_items","path":"scripts/spawn_items/spawn_items.yy",},},
     {"id":{"name":"obj_proj_bullet","path":"objects/obj_proj_bullet/obj_proj_bullet.yy",},},
     {"id":{"name":"spr_shotgunBullet","path":"sprites/spr_shotgunBullet/spr_shotgunBullet.yy",},},
     {"id":{"name":"spr_tree_grass_cobble_end","path":"sprites/spr_tree_grass_cobble_end/spr_tree_grass_cobble_end.yy",},},

@@ -35,17 +35,17 @@ if(keyboard_check(ord("3"))){
 if (change_weapon) {
 	instance_destroy(gun);
 	gun = weapons[weaponIndex]
-	instance_create_layer(x, y, "GunLayer", gun);
+	instance_create_layer(x, y, "ItemLayer", gun);
 	gun.in_inventory = true;
 }
 
 // Check item pick up
-if (keyboard_check_pressed(ord("E"))) {
+if (keyboard_check_pressed(ord("E"))) {	
 	var item = find_object(x, y, pickupRad, obj_item, gun);
 	if (item != noone) {
-		instance_create_layer(x, y, "GunLayer", gun);
+		instance_create_layer(x, y, "ItemLayer", gun);
 		gun = item.object_index;
-		instance_create_layer(x, y, "GunLayer", gun);
+		instance_create_layer(x, y, "ItemLayer", gun);
 		gun.in_inventory = true;
 		instance_destroy(item);
 	}

@@ -28,6 +28,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"spr_glock","order":3,"path":"sprites/spr_glock/spr_glock.yy",},
+    {"name":"vector2","order":8,"path":"scripts/vector2/vector2.yy",},
     {"name":"obj_awp","order":1,"path":"objects/obj_awp/obj_awp.yy",},
     {"name":"spr_sawedoff","order":6,"path":"sprites/spr_sawedoff/spr_sawedoff.yy",},
     {"name":"player_move","order":4,"path":"scripts/player_move/player_move.yy",},
@@ -57,6 +58,7 @@
     {"name":"spr_tree_grass_cobble_turn","order":5,"path":"sprites/spr_tree_grass_cobble_turn/spr_tree_grass_cobble_turn.yy",},
     {"name":"manage_map_change","order":3,"path":"scripts/manage_map_change/manage_map_change.yy",},
     {"name":"spr_testEnemy","order":5,"path":"sprites/spr_testEnemy/spr_testEnemy.yy",},
+    {"name":"spawn_items","order":7,"path":"scripts/spawn_items/spawn_items.yy",},
     {"name":"obj_proj_bullet","order":6,"path":"objects/obj_proj_bullet/obj_proj_bullet.yy",},
     {"name":"spr_shotgunBullet","order":2,"path":"sprites/spr_shotgunBullet/spr_shotgunBullet.yy",},
     {"name":"obj_XM","order":7,"path":"objects/obj_XM/obj_XM.yy",},

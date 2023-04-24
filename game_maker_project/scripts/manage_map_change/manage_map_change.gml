@@ -10,25 +10,85 @@ function manage_map_change(){
 		player.y = room_height - 30;
 		global.curr_tile_y -= 1;	
 		map_change = true;
-		movement_dir = "UP";	
+		movement_dir = "UP";
+		
+		// Check if the new tile has been visitied
+		var curr_pos = new vector2(global.curr_tile_x, global.curr_tile_y);
+		var isVisited = false;
+		for (var i = 0; i < ds_list_size(global.visited_tiles); i++) {
+			if (curr_pos.equals(global.visited_tiles[| i])) {
+				isVisited = true;
+				break;
+			}
+		}
+		
+		if (!isVisited) {
+			ds_list_add(global.visited_tiles, curr_pos);
+			spawn_items(1);
+		}
 	}
 	else if(player.y > room_height && tile.down_avail){
 		player.y = 30;
 		global.curr_tile_y += 1;
 		map_change = true;
 		movement_dir = "DOWN";	
+		
+		// Check if the new tile has been visitied
+		var curr_pos = new vector2(global.curr_tile_x, global.curr_tile_y);
+		var isVisited = false;
+		for (var i = 0; i < ds_list_size(global.visited_tiles); i++) {
+			if (curr_pos.equals(global.visited_tiles[| i])) {
+				isVisited = true;
+				break;
+			}
+		}
+		
+		if (!isVisited) {
+			ds_list_add(global.visited_tiles, curr_pos);
+			spawn_items(1);
+		}
 	}
 	else if(player.x < 0 && tile.left_avail){
 		player.x = room_width - 30;
 		global.curr_tile_x -= 1;
 		map_change = true;
-		movement_dir = "LEFT";	
+		movement_dir = "LEFT";
+		
+		// Check if the new tile has been visitied
+		var curr_pos = new vector2(global.curr_tile_x, global.curr_tile_y);
+		var isVisited = false;
+		for (var i = 0; i < ds_list_size(global.visited_tiles); i++) {
+			if (curr_pos.equals(global.visited_tiles[| i])) {
+				isVisited = true;
+				break;
+			}
+		}
+		
+		if (!isVisited) {
+			ds_list_add(global.visited_tiles, curr_pos);
+			spawn_items(1);
+		}
 	}
 	else if(player.x > room_width && tile.right_avail){
 		player.x = 30;
 		global.curr_tile_x += 1;
 		map_change = true;
-		movement_dir = "RIGHT";	
+		movement_dir = "RIGHT";
+		
+		// Check if the new tile has been visitied
+		var curr_pos = new vector2(global.curr_tile_x, global.curr_tile_y);
+		var isVisited = false;
+		for (var i = 0; i < ds_list_size(global.visited_tiles); i++) {
+			if (curr_pos.equals(global.visited_tiles[| i])) {
+				isVisited = true;
+				break;
+			}
+		}
+		
+		if (!isVisited) {
+			ds_list_add(global.visited_tiles, curr_pos);
+			spawn_items(1);
+		}
 	}
 
 	if(map_change){

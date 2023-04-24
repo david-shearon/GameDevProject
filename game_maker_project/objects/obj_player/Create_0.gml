@@ -17,7 +17,7 @@ gun = weapons[weaponIndex];
 gun_x = 0;
 gun_y = 0;
 
-instance_create_layer(x, y, "GunLayer", gun);
+instance_create_layer(x, y, "ItemLayer", gun);
 gun.in_inventory = true;
 
 ////player variables
