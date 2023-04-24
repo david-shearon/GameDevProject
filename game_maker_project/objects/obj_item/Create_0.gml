@@ -4,4 +4,4 @@ in_inventory = false;
 grnd_spr_scale = 1;
 
 // Higher means more rare
-weight = 1;
+weight = 0;
