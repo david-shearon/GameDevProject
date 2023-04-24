@@ -43,11 +43,11 @@ if (change_weapon) {
 if (keyboard_check_pressed(ord("E"))) {	
 	var item = find_object(x, y, pickupRad, obj_item, gun);
 	if (item != noone) {
-		instance_create_layer(x, y, "ItemLayer", gun);
-		gun = item.object_index;
-		instance_create_layer(x, y, "ItemLayer", gun);
+		gun.x = x;
+		gun.y = y;
+		gun.in_inventory = false;
+		gun = item;
 		gun.in_inventory = true;
-		instance_destroy(item);
 	}
 }
 
