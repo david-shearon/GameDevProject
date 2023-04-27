@@ -1,3 +1,5 @@
+event_inherited();
+
 // Variable to track the cooldown of the weapon
 cld = 0;
 
