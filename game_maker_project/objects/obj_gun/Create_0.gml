@@ -21,8 +21,10 @@ type = gun_types.pistol;
 
 in_inventory = false;
 
+gun_snd = snd_rifle;
+
 // Create fire function
-function fire_gun(x_start, y_start, shoot_direction, fire_key, sound) {
+function fire_gun(x_start, y_start, shoot_direction, fire_key) {
 	// Reset bullet_count if this is a new spray
 	if (mouse_check_button_pressed(fire_key)) {
 		spray_count = 0;
@@ -93,7 +95,7 @@ function fire_gun(x_start, y_start, shoot_direction, fire_key, sound) {
 		// Decrement mag_count
 		mag_count--;
 		
-		audio_play_sound(sound, 0, 0, 1);
+		audio_play_sound(gun_snd, 0, 0, 1);
 		
 		// Check if the mag is empty
 		if (mag_count <= 0) {

@@ -3,43 +3,15 @@ switch (gun.type) {
 	case gun_types.pistol:
 		sprite_index = spr_player_pistol;
 		gun_x = 73;
-		gun_y = 24;
 		break;
 	case gun_types.shotgun:
 		sprite_index = spr_player_shotgun;
 		gun_x = 108;
-		gun_y = 15;
 		break;
 	case gun_types.rifle:
 		sprite_index = spr_player_rifle;
 		gun_x = 108;
-		gun_y = 15;
 		break;
-}
-
-var change_weapon = false;
-//change weapon logic
-if(keyboard_check(ord("1"))){
-	weaponIndex = 0;
-	gunSound = snd_rifle;
-	change_weapon = true;
-}
-if(keyboard_check(ord("2"))){
-	weaponIndex = 1;
-	gunSound = snd_shotgun;
-	change_weapon = true;
-}
-if(keyboard_check(ord("3"))){
-	weaponIndex = 2;	
-	gunSound = snd_pistol;
-	change_weapon = true;
-}
-
-if (change_weapon) {
-	instance_destroy(gun);
-	gun = weapons[weaponIndex]
-	instance_create_layer(x, y, "ItemLayer", gun);
-	gun.in_inventory = true;
 }
 
 // Check item pick up
@@ -72,7 +44,7 @@ var bullet_y = y + lengthdir_y(gun_x, direction);
 var shoot_dir = point_direction(x, y, mouse_x, mouse_y);
 
 // Fire gun
-gun.fire_gun(bullet_x, bullet_y, shoot_dir, mb_left, gunSound);
+gun.fire_gun(bullet_x, bullet_y, shoot_dir, mb_left);
 
 
 ////movement script

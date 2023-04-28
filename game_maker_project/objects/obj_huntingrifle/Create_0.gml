@@ -8,3 +8,4 @@ grnd_spr_scale = .75;
 
 weight= 7;
 
+gun_snd = snd_rifle;
