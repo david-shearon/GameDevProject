@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function manage_map_change(){
+function manage_map_change(object_type){
 	player = instance_find(obj_player, 0);
 	tile = instance_find(obj_generic_map, 0);
 	var movement_dir = "";

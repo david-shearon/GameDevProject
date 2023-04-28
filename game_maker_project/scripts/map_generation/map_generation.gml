@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function map_generation(map_tile_width, map_tile_height, start_tile_x, start_tile_y, MAP_DENSITY){
-	//randomize();
+	randomize();
 	
 	//var MAP_DENSITY = 2;
 	
@@ -76,7 +76,7 @@ function map_generation(map_tile_width, map_tile_height, start_tile_x, start_til
 							
 		current_tile = global.tile_map[start_tile_x, start_tile_y];
 		global.tile_map[start_tile_x, start_tile_y].tile = tileTypes.CLAIMED;
-		global.tile_map[start_tile_x - 1, start_tile_y].tile = tileTypes.LEFT_RIGHT_STRAIGHT;
+		global.tile_map[start_tile_x - 1, start_tile_y].tile = tileTypes.RIGHT_END;
 		
 		while(current_tile.x_coord != map_tile_width || dead_end){
 			//add available options to random list

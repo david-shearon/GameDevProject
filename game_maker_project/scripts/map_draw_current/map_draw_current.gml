@@ -72,6 +72,25 @@ function map_draw_current(map_x, map_y, player_move_dir){
 				new_tile.right_avail = true;
 				new_tile.up_avail = true;				
 				break;
+			case tileTypes.RIGHT_END:
+				new_tile.sprite_index = spr_tree_grass_cobble_end;
+				new_tile.image_angle = 180;
+				new_tile.right_avail = true;				
+				break;
+			case tileTypes.LEFT_END:
+				new_tile.sprite_index = spr_tree_grass_cobble_end;
+				new_tile.left_avail = true;				
+				break;
+			case tileTypes.DOWN_END:
+				new_tile.sprite_index = spr_tree_grass_cobble_end;
+				new_tile.image_angle = 90;
+				new_tile.down_avail = true;				
+				break;
+			case tileTypes.UP_END:
+				new_tile.sprite_index = spr_tree_grass_cobble_end;
+				new_tile.image_angle = 270;
+				new_tile.up_avail = true;				
+				break;
 			case tileTypes.FOUR_WAY:
 				new_tile.sprite_index = spr_tree_grass_cobble_intersection;
 				new_tile.left_avail = true;
