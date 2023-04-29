@@ -10,7 +10,6 @@ pickupRad = 150;
 
 
 // Gun player has
-weaponIndex = 0;
 gun = obj_glock;
 
 // Distance from center of player to end of gun

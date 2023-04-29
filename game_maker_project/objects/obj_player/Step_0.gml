@@ -45,3 +45,8 @@ var shoot_dir = point_direction(x, y, mouse_x, mouse_y);
 
 // Fire gun
 gun.fire_gun(bullet_x, bullet_y, shoot_dir, mb_left);
+
+// Death Logic
+if(playerHp <= 0) {
+	room_goto(GameOver)
+}

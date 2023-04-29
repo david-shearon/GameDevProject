@@ -12,3 +12,7 @@ if(room == StoryIntro) {
 	draw_set_font(fnt_menu);
 	draw_text(room_width/4, room_height - 200, "Press Enter To Survive");
 }
+if(room == GameOver) {
+	draw_set_font(fnt_menu);
+	draw_text(room_width/4, room_height/2, "You Were Never Seen Again");
+}
