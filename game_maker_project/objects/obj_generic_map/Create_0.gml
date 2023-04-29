@@ -1,6 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+event_inherited();
+
+up_avail = false;
+down_avail = false;
+left_avail = false;
+right_avail = false;
+
 enum MoveTo {
 	CENTER,
 	RIGHT,
@@ -9,20 +16,4 @@ enum MoveTo {
 	UP,
 	NONE
 }
-
-enum MoveDir {
-	LEFT,
-	RIGHT,
-	UP,
-	DOWN,
-	NONE
-}
-
-dir = MoveDir.NONE;
 move_to = MoveTo.NONE;
-transition_speed = 50;
-
-up_avail = false;
-down_avail = false;
-left_avail = false;
-right_avail = false;

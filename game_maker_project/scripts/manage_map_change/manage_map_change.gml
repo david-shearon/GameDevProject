@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function manage_map_change(object_type){
+function manage_map_change(){
 	player = instance_find(obj_player, 0);
 	tile = instance_find(obj_generic_map, 0);
 	var movement_dir = "";
@@ -24,7 +24,7 @@ function manage_map_change(object_type){
 		
 		if (!isVisited) {
 			ds_list_add(global.visited_tiles, curr_pos);
-			spawn_items(1);
+			spawn_items(1, "UP");
 		}
 	}
 	else if(player.y > room_height + 10 && tile.down_avail){
@@ -45,7 +45,7 @@ function manage_map_change(object_type){
 		
 		if (!isVisited) {
 			ds_list_add(global.visited_tiles, curr_pos);
-			spawn_items(1);
+			spawn_items(1, "DOWN");
 		}
 	}
 	else if(player.x < -10 && tile.left_avail){
@@ -66,7 +66,7 @@ function manage_map_change(object_type){
 		
 		if (!isVisited) {
 			ds_list_add(global.visited_tiles, curr_pos);
-			spawn_items(1);
+			spawn_items(1, "LEFT");
 		}
 	}
 	else if(player.x > room_width + 10 && tile.right_avail){
@@ -87,7 +87,7 @@ function manage_map_change(object_type){
 		
 		if (!isVisited) {
 			ds_list_add(global.visited_tiles, curr_pos);
-			spawn_items(1);
+			spawn_items(1, "RIGHT");
 		}
 	}
 

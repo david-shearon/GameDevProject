@@ -6,3 +6,5 @@ if (cld > 0) {
 if (reload_cld > 0) {
 	reload_cld--;
 }
+
+event_inherited();

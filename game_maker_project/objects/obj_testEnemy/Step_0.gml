@@ -1,7 +1,7 @@
 event_inherited();
 
 // Locate player
-var player = instance_nearest(x, y, obj_testplayer);
+var player = instance_nearest(x, y, obj_player);
 
 // Move towards player
 if (player != noone && distance_to_object(player) <= range) {

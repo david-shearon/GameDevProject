@@ -15,3 +15,5 @@ cld = .5 // number of seconds between attacks
 // Movement
 // x = random(room_width); // random x position, TODO make this work with the map bounds
 // y = random(room_height); // random y position, TODO make this work with the map bounds
+
+event_inherited();

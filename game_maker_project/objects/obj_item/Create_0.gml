@@ -5,3 +5,5 @@ grnd_spr_scale = 1;
 
 // Higher means more rare
 weight = 0;
+
+event_inherited();

@@ -2,6 +2,7 @@
 MAX_SPRINT_TIME = 100.00;
 playerHp = 100;
 movSpd = 5;
+movSpd = 15;
 sprintSpd = 10;
 stamina = MAX_SPRINT_TIME;
 sprintCD = false;

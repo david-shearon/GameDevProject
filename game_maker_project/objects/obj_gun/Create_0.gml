@@ -32,13 +32,21 @@ function fire_gun(x_start, y_start, shoot_direction, fire_key) {
 	
 	// Check that the user is firing the gun
 	if (isAuto && mouse_check_button(fire_key) || !isAuto && mouse_check_button_pressed(fire_key)) {
-		// Check the cooldown
-		if (cld > 0) {
+
+		// Check if currently reloading
+		if (reload_cld > 0) {
+			//play empty gun noises
+			if(!audio_is_playing(snd_empty)){
+				audio_play_sound(snd_empty, 5, false);	
+			}
+			else{
+				audio_resume_sound(snd_empty);
+			}
 			exit;
 		}
 		
-		// Check if currently reloading
-		if (reload_cld > 0) {
+		// Check the cooldown
+		if (cld > 0) {
 			exit;
 		}
 	

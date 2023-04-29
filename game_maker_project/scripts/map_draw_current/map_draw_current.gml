@@ -110,21 +110,37 @@ function map_draw_current(map_x, map_y, player_move_dir){
 				new_tile.dir = MoveDir.DOWN;
 				old_tile.dir = MoveDir.DOWN;
 				old_tile.move_to = MoveTo.DOWN;
+				for (var i = 0; i < instance_number(obj_transitioner); ++i;)
+				{
+					instance_find(obj_transitioner,i).dir = MoveDir.DOWN;
+				}
 			} else if(player_move_dir == "DOWN"){
 				new_tile.y = 3 * room_height / 2;
 				new_tile.dir = MoveDir.UP;		
 				old_tile.dir = MoveDir.UP;		
 				old_tile.move_to = MoveTo.UP;	
+				for (var i = 0; i < instance_number(obj_transitioner); ++i;)
+				{
+					instance_find(obj_transitioner,i).dir = MoveDir.UP;
+				}
 			} else if(player_move_dir == "LEFT"){
 				new_tile.x = -room_width / 2;
 				new_tile.dir = MoveDir.RIGHT;	
-				old_tile.dir = MoveDir.RIGHT;	
-				old_tile.move_to = MoveTo.RIGHT;		
+				old_tile.dir = MoveDir.RIGHT;
+				old_tile.move_to = MoveTo.RIGHT;
+				for (var i = 0; i < instance_number(obj_transitioner); ++i;)
+				{
+					instance_find(obj_transitioner,i).dir = MoveDir.RIGHT;
+				}		
 			} else if(player_move_dir == "RIGHT"){
 				new_tile.x = 3 * room_width / 2;
 				new_tile.dir = MoveDir.LEFT;	
 				old_tile.dir = MoveDir.LEFT;
-				old_tile.move_to = MoveTo.LEFT;			
+				old_tile.move_to = MoveTo.LEFT;	
+				for (var i = 0; i < instance_number(obj_transitioner); ++i;)
+				{
+					instance_find(obj_transitioner,i).dir = MoveDir.LEFT;
+				}
 			}	
 		}
 	}

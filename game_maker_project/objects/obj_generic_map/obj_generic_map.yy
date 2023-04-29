@@ -9,10 +9,13 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "MapObjects",
+    "path": "folders/Objects/MapObjects.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_transitioner",
+    "path": "objects/obj_transitioner/obj_transitioner.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
