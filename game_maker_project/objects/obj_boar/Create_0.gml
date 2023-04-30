@@ -1,7 +1,7 @@
 event_inherited();
 // Stats
-hp = 25;
-atk = 3;
+hp = 100;
+atk = 10;
 spd = 20;
 gun = noone;
 range = 1000;

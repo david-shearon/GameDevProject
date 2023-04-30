@@ -5,7 +5,6 @@
   "ResourceOrderSettings": [
     {"name":"spr_enemy_bat","order":5,"path":"sprites/spr_enemy_bat/spr_enemy_bat.yy",},
     {"name":"obj_transitioner","order":9,"path":"objects/obj_transitioner/obj_transitioner.yy",},
-    {"name":"spr_enemy_boar_attack","order":1,"path":"sprites/spr_enemy_boar_attack/spr_enemy_boar_attack.yy",},
     {"name":"obj_player","order":8,"path":"objects/obj_player/obj_player.yy",},
     {"name":"obj_bullet","order":7,"path":"objects/obj_bullet/obj_bullet.yy",},
     {"name":"obj_wolf","order":1,"path":"objects/obj_wolf/obj_wolf.yy",},
@@ -22,6 +21,8 @@
     {"name":"map_change_helper","order":1,"path":"scripts/map_change_helper/map_change_helper.yy",},
     {"name":"GameOver","order":1,"path":"rooms/GameOver/GameOver.yy",},
     {"name":"spawn_enemies","order":2,"path":"scripts/spawn_enemies/spawn_enemies.yy",},
+    {"name":"obj_rat","order":4,"path":"objects/obj_rat/obj_rat.yy",},
+    {"name":"obj_boar","order":3,"path":"objects/obj_boar/obj_boar.yy",},
     {"name":"spr_enemy_boar_walk","order":2,"path":"sprites/spr_enemy_boar_walk/spr_enemy_boar_walk.yy",},
     {"name":"obj_generic_map","order":1,"path":"objects/obj_generic_map/obj_generic_map.yy",},
   ],
