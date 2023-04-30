@@ -68,7 +68,7 @@
     {"id":{"name":"spr_tree_grass_cobble_straight","path":"sprites/spr_tree_grass_cobble_straight/spr_tree_grass_cobble_straight.yy",},},
     {"id":{"name":"spr_mac10","path":"sprites/spr_mac10/spr_mac10.yy",},},
     {"id":{"name":"obj_wolf","path":"objects/obj_wolf/obj_wolf.yy",},},
-    {"id":{"name":"obj_testEnemy","path":"objects/obj_testEnemy/obj_testEnemy.yy",},},
+    {"id":{"name":"obj_spider","path":"objects/obj_spider/obj_spider.yy",},},
     {"id":{"name":"spr_rifleBullet","path":"sprites/spr_rifleBullet/spr_rifleBullet.yy",},},
     {"id":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},},
     {"id":{"name":"spr_player_pistol","path":"sprites/spr_player_pistol/spr_player_pistol.yy",},},
