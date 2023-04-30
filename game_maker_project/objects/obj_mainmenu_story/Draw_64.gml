@@ -14,7 +14,7 @@ if(room == StoryIntro) {
 }
 if(room == GameOver) {
 	draw_set_font(fnt_menu);
-	draw_set_color(c_red);
+	draw_set_color(c_white);
 	draw_text(room_width - 1375, room_height - 1000, "You Were Never Seen Again");
 	draw_text(room_width - 1350, room_height - 850, "Press Enter To Try Again");
 }
