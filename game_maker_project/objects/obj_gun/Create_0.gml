@@ -12,8 +12,6 @@ spray_count = 0;
 // Number of bullets in the current magazine
 mag_count = mag_size;
 
-reload_cld = 0;
-
 // Can be replaced in the future if we want guns to have a max range
 max_dist = point_distance(0, 0, room_width, room_height);
 
@@ -22,6 +20,18 @@ type = gun_types.pistol;
 in_inventory = false;
 
 gun_snd = snd_rifle;
+
+is_reloading = false;
+
+// Create reload function
+function reload() {
+	if (mag_count != mag_size) {
+		// Initiate reload
+		alarm[0] = reload_dur*room_speed;
+		mag_count = mag_size;
+		is_reloading = true;
+	}
+}
 
 // Create fire function
 function fire_gun(x_start, y_start, shoot_direction, fire_key) {
@@ -34,7 +44,7 @@ function fire_gun(x_start, y_start, shoot_direction, fire_key) {
 	if (isAuto && mouse_check_button(fire_key) || !isAuto && mouse_check_button_pressed(fire_key)) {
 
 		// Check if currently reloading
-		if (reload_cld > 0) {
+		if (alarm[0] > 0) {
 			//play empty gun noises
 			if(!audio_is_playing(snd_empty)){
 				audio_play_sound(snd_empty, 5, false);	
@@ -107,9 +117,7 @@ function fire_gun(x_start, y_start, shoot_direction, fire_key) {
 		
 		// Check if the mag is empty
 		if (mag_count <= 0) {
-			// Initiate reload
-			reload_cld = reload_dur*room_speed;
-			mag_count = mag_size;
+			reload();
 		}
 	}
 }

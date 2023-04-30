@@ -26,6 +26,11 @@ if (keyboard_check_pressed(ord("E"))) {
 	}
 }
 
+// Check for reload
+if (keyboard_check_pressed(ord("R"))) {
+	gun.reload();
+}
+
 //turn player towards mouse cursor
 if (instance_exists(obj_player)) {
 	var dir = point_direction(x, y, mouse_x, mouse_y);
