@@ -9,3 +9,7 @@ if(room == StoryIntro && keyboard_check_pressed(vk_enter)) {
 	//moving to main game room
 	room_goto(MainGame)
 }
+if(room == GameOver && keyboard_check_pressed(vk_enter)) {
+	//restarting the game so the player can try again
+	game_restart()
+}
