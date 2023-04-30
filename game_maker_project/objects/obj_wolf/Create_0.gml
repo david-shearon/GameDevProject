@@ -3,3 +3,5 @@
 event_inherited();
 
 spd = 7;
+
+weight = 1;

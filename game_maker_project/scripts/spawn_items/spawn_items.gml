@@ -5,7 +5,7 @@ function spawn_items(difficulty, spawn_dir){
 	
 	var total_weight = 0;
 	for (var i = 0; i < array_length(items); i++) {
-		total_weight += global.items[? items[i]];
+		total_weight += global.items[? items[i]] * (1 - 1/difficulty);
 	}
 	
 	// Choose what item to spawn
@@ -13,7 +13,7 @@ function spawn_items(difficulty, spawn_dir){
 	var curr_weight = 0;
 	var item = 0;
 	for (var i = 0; i < array_length(items); i++) {
-		curr_weight += global.items[? items[i]];
+		curr_weight += global.items[? items[i]] * (1 - 1/difficulty);
 		if (rand < curr_weight/total_weight) {
 			item = items[i];
 			break;
@@ -33,7 +33,6 @@ function spawn_items(difficulty, spawn_dir){
 	}else if(spawn_dir == "DOWN"){
 		pos_y += room_width;
 	}
-	
 	
 	// Spawn the item
 	instance_create_layer(pos_x, pos_y, "ItemLayer", item);

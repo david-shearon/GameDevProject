@@ -7,9 +7,6 @@ enum gun_types {
 	pistol
 }
 
-
-
-
 global.curr_tile_x = 1;
 global.curr_tile_y = 2;
 var map_tile_width = 10;
@@ -40,6 +37,28 @@ for (var i = 0; i < array_length(keys); i++) {
 	for (var j = 0; j < array_length(keys); j++) {
 		if (object_is_ancestor(keys[j], keys[i])) {
 			ds_map_delete(global.items, keys[i]);
+			break;
+		}
+	}
+}
+
+// Make list of all enemy objects
+global.enemies = ds_map_create();
+for (var i = 0; object_exists(i); i++) {
+	// Add all enemies with their rarities
+	if (object_is_ancestor(i, obj_enemy)) {
+		var enemy = instance_create_layer(0, 0, "Instances", i);
+		ds_map_add(global.enemies, i, enemy.weight);
+		instance_destroy(enemy);
+	}
+}
+
+// Remove parent objects from enemy list
+var keys = ds_map_keys_to_array(global.enemies);
+for (var i = 0; i < array_length(keys); i++) {
+	for (var j = 0; j < array_length(keys); j++) {
+		if (object_is_ancestor(keys[j], keys[i])) {
+			ds_map_delete(global.enemies, keys[i]);
 			break;
 		}
 	}
