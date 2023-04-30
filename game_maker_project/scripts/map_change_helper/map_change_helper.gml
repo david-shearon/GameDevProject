@@ -27,8 +27,8 @@ function map_change_helper(movement_dir){
 	}
 		
 	if (!isVisited) {
-		var dist = point_distance(0, 0, global.curr_tile_x, global.curr_tile_y);
 		ds_list_add(global.visited_tiles, curr_pos);
+		var dist = ds_list_size(global.visited_tiles);
 		spawn_items(dist, movement_dir);
 		spawn_enemies(dist, movement_dir);
 	}

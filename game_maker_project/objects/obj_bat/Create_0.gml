@@ -6,7 +6,7 @@ spd = 20;
 gun = noone;
 range = 1000;
 cld = .5;
-weight = 5;
+weight = 3;
 
 // Start 1-2 second timer before charge
 alarm[0] = room_speed*random_range(1, 2);
