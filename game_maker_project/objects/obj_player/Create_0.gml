@@ -1,9 +1,8 @@
 //player variables
 MAX_SPRINT_TIME = 100.00;
 playerHp = 100;
-movSpd = 5;
-movSpd = 15;
-sprintSpd = 10;
+movSpd = 10;
+sprintSpd = 15;
 stamina = MAX_SPRINT_TIME;
 sprintCD = false;
 pickupRad = 150;
