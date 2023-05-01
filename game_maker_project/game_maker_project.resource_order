@@ -1,7 +1,7 @@
 {
   "FolderOrderSettings": [
-    {"name":"MapObjects","order":2,"path":"folders/Objects/MapObjects.yy",},
     {"name":"Item Objects","order":3,"path":"folders/Objects/Item Objects.yy",},
+    {"name":"MapObjects","order":2,"path":"folders/Objects/MapObjects.yy",},
     {"name":"Item Sprites","order":3,"path":"folders/Sprites/Item Sprites.yy",},
   ],
   "ResourceOrderSettings": [
@@ -22,6 +22,7 @@
     {"name":"spr_reloading","order":1,"path":"sprites/spr_reloading/spr_reloading.yy",},
     {"name":"obj_enemy","order":2,"path":"objects/obj_enemy/obj_enemy.yy",},
     {"name":"spr_enemy_flower","order":3,"path":"sprites/spr_enemy_flower/spr_enemy_flower.yy",},
+    {"name":"spr_armor","order":2,"path":"sprites/spr_armor/spr_armor.yy",},
     {"name":"obj_proj_bullet","order":1,"path":"objects/obj_proj_bullet/obj_proj_bullet.yy",},
     {"name":"map_change_helper","order":1,"path":"scripts/map_change_helper/map_change_helper.yy",},
     {"name":"GameOver","order":1,"path":"rooms/GameOver/GameOver.yy",},
@@ -29,6 +30,7 @@
     {"name":"obj_rat","order":4,"path":"objects/obj_rat/obj_rat.yy",},
     {"name":"obj_boar","order":3,"path":"objects/obj_boar/obj_boar.yy",},
     {"name":"spr_enemy_boar_walk","order":2,"path":"sprites/spr_enemy_boar_walk/spr_enemy_boar_walk.yy",},
+    {"name":"obj_armor","order":2,"path":"objects/obj_armor/obj_armor.yy",},
     {"name":"obj_generic_map","order":1,"path":"objects/obj_generic_map/obj_generic_map.yy",},
   ],
 }

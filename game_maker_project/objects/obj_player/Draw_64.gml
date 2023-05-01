@@ -1,6 +1,6 @@
 draw_set_font(fnt_hud);
 draw_set_color(c_white);
-draw_text(40, room_height - 70, "Health: " + string(playerHp));
+draw_text(40, room_height - 70, "Health: " + string(int64(playerHp)));
 draw_text(450, room_height - 70, "Gun:");
 
 if (gun != noone) {

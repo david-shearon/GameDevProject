@@ -7,6 +7,7 @@ sprintSpd = 15;
 stamina = MAX_SPRINT_TIME;
 sprintCD = false;
 pickupRad = 150;
+armor = 0; // Percent of damage player blocks
 
 // Gun player has
 gun = noone;
