@@ -147,6 +147,7 @@
     {"id":{"name":"Sprite24","path":"sprites/Sprite24/Sprite24.yy",},},
     {"id":{"name":"obj_mac10","path":"objects/obj_mac10/obj_mac10.yy",},},
     {"id":{"name":"sprint_logic","path":"scripts/sprint_logic/sprint_logic.yy",},},
+    {"id":{"name":"MainGame","path":"rooms/MainGame/MainGame.yy",},},
     {"id":{"name":"spr_smoke","path":"sprites/spr_smoke/spr_smoke.yy",},},
     {"id":{"name":"map_generation","path":"scripts/map_generation/map_generation.yy",},},
     {"id":{"name":"spr_enemy_boar_walk","path":"sprites/spr_enemy_boar_walk/spr_enemy_boar_walk.yy",},},
@@ -160,6 +161,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},},
+    {"roomId":{"name":"MainGame","path":"rooms/MainGame/MainGame.yy",},},
     {"roomId":{"name":"StoryIntro","path":"rooms/StoryIntro/StoryIntro.yy",},},
     {"roomId":{"name":"GameOver","path":"rooms/GameOver/GameOver.yy",},},
   ],
