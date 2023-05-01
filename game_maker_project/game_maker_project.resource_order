@@ -1,7 +1,7 @@
 {
   "FolderOrderSettings": [
-    {"name":"MapObjects","order":2,"path":"folders/Objects/MapObjects.yy",},
     {"name":"Item Objects","order":3,"path":"folders/Objects/Item Objects.yy",},
+    {"name":"MapObjects","order":2,"path":"folders/Objects/MapObjects.yy",},
     {"name":"Item Sprites","order":3,"path":"folders/Sprites/Item Sprites.yy",},
   ],
   "ResourceOrderSettings": [

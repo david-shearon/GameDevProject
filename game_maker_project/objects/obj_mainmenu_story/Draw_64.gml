@@ -14,6 +14,7 @@ if(room == StoryIntro) {
 	draw_text(room_width/8, room_height - 200, "      Press Enter To Survive       ");
 }
 if(room == GameOver) {
+	audio_stop_sound(snd_footsteps)
 	draw_set_font(fnt_menu);
 	draw_set_color(c_white);
 	draw_text(room_width - 1375, room_height - 1000, "You Were Never Seen Again");
