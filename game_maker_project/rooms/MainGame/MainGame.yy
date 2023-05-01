@@ -11,11 +11,11 @@
     {"name":"inst_16464B9","path":"rooms/MainGame/MainGame.yy",},
     {"name":"inst_731A9CD6","path":"rooms/MainGame/MainGame.yy",},
     {"name":"inst_51D2706A","path":"rooms/MainGame/MainGame.yy",},
-    {"name":"inst_5DBE7DED","path":"rooms/MainGame/MainGame.yy",},
     {"name":"inst_63A34001","path":"rooms/MainGame/MainGame.yy",},
     {"name":"inst_424D46DE","path":"rooms/MainGame/MainGame.yy",},
     {"name":"inst_1B8FC1D8","path":"rooms/MainGame/MainGame.yy",},
     {"name":"inst_70145A17","path":"rooms/MainGame/MainGame.yy",},
+    {"name":"inst_5DBE7DED","path":"rooms/MainGame/MainGame.yy",},
   ],
   "isDnd": false,
   "layers": [
