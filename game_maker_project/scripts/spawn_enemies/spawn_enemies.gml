@@ -55,7 +55,7 @@ function spawn_enemies(difficulty, spawn_dir){
 				pos_y -= room_height;
 			}else if(spawn_dir == "DOWN"){
 				// Make enemies not spawn on top of player
-				if (pos_y > room_height*1/3) {
+				if (pos_y < room_height*1/3) {
 					pos_y += room_height*1/3;
 				}
 				
