@@ -33,13 +33,33 @@ function spawn_enemies(difficulty, spawn_dir){
 			var pos_y = irandom_range(50, room_height - 50);
 	
 			if(spawn_dir == "LEFT"){
+				// Make enemies not spawn on top of player
+				if (pos_x > room_width*2/3) {
+					pos_x -= room_width*1/3;
+				}
+				
 				pos_x -= room_width;
 			}else if(spawn_dir == "RIGHT"){
+				// Make enemies not spawn on top of player
+				if (pos_x < room_width*1/3) {
+					pos_x += room_width*1/3;
+				}
+				
 				pos_x += room_width;
 			}else if(spawn_dir == "UP"){
-				pos_y -= room_width;
+				// Make enemies not spawn on top of player
+				if (pos_y > room_height*2/3) {
+					pos_y -= room_height*1/3;
+				}
+				
+				pos_y -= room_height;
 			}else if(spawn_dir == "DOWN"){
-				pos_y += room_width;
+				// Make enemies not spawn on top of player
+				if (pos_y > room_height*1/3) {
+					pos_y -= room_height*1/3;
+				}
+				
+				pos_y += room_height;
 			}
 	
 			// Spawn the enemy

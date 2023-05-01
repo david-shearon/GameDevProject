@@ -35,13 +35,18 @@ if (gun != noone) {
 if (keyboard_check_pressed(ord("E"))) {	
 	var item = find_object(x, y, pickupRad, obj_item, gun);
 	if (item != noone) {
-		if (gun != noone) {
-			gun.x = x;
-			gun.y = y;
-			gun.in_inventory = false;
+		if (object_is_ancestor(item.object_index, obj_gun)) {
+			if (gun != noone) {
+				gun.x = x;
+				gun.y = y;
+				gun.in_inventory = false;
+			}
+			gun = item;
+			gun.in_inventory = true;
+		} else {
+			item.item_effect(id);
+			instance_destroy(item);
 		}
-		gun = item;
-		gun.in_inventory = true;
 	}
 }
 
