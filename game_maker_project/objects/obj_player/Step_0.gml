@@ -60,6 +60,9 @@ if (instance_exists(obj_player)) {
 	player_move()
 }
 
+// Regen health
+playerHp = min(maxHp, playerHp + health_regen/room_speed);
+
 // Death Logic
 if(playerHp <= 0) {
 	shader_reset();

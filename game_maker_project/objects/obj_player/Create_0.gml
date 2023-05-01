@@ -8,6 +8,7 @@ stamina = MAX_SPRINT_TIME;
 sprintCD = false;
 pickupRad = 150;
 armor = 0; // Percent of damage player blocks
+health_regen = 0; // Per second
 
 // Gun player has
 gun = noone;

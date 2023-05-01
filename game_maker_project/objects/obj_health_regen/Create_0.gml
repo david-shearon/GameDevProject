@@ -6,10 +6,10 @@ in_inventory = false;
 grnd_spr_scale = 1;
 
 // Higher means more common
-weight = 4;
+weight = 3;
 
 function item_effect(player) {
 	with (player) {
-		armor = (1-armor)*.2;
+		health_regen += 1;
 	}
 }
