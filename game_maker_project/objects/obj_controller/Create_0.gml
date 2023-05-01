@@ -53,7 +53,7 @@ for (var i = 0; object_exists(i); i++) {
 	if (object_is_ancestor(i, obj_enemy)) {
 		var enemy = instance_create_layer(0, 0, "Instances", i);
 		ds_map_add(global.enemies, i, enemy.weight);
-	// 	instance_destroy(enemy);
+	 	instance_destroy(enemy, false);
 	}
 }
 
