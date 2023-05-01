@@ -71,3 +71,7 @@ for (var i = 0; i < array_length(keys); i++) {
 // Make list of visited tiles
 global.visited_tiles = ds_list_create();
 ds_list_add(global.visited_tiles, new vector2(global.curr_tile_x, global.curr_tile_y));
+ds_list_add(global.visited_tiles, new vector2(global.curr_tile_x - 1, global.curr_tile_y));
+
+// Difficulty for spawning in enemies
+global.difficulty = 1;

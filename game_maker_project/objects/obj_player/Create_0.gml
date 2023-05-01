@@ -8,15 +8,12 @@ stamina = MAX_SPRINT_TIME;
 sprintCD = false;
 pickupRad = 150;
 
-
 // Gun player has
-gun = obj_glock;
+gun = noone;
+sprite_index = spr_player_knife;
 
 // Distance from center of player to end of gun
 gun_x = 0;
-
-instance_create_layer(x, y, "ItemLayer", gun);
-gun.in_inventory = true;
 
 ////player variables
 //playerHp = 100;
