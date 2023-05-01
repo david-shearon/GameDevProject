@@ -53,5 +53,10 @@ gun.fire_gun(bullet_x, bullet_y, shoot_dir, mb_left);
 
 // Death Logic
 if(playerHp <= 0) {
+	shader_reset();
 	room_goto(GameOver)
 }
+
+// Send data to shader
+var health_percent = playerHp/maxHp;
+shader_set_uniform_f(global.shd_health, health_percent);
