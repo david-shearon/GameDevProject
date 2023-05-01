@@ -1,6 +1,7 @@
 //player variables
 MAX_SPRINT_TIME = 100.00;
 playerHp = 100;
+maxHp = 100;
 movSpd = 10;
 sprintSpd = 15;
 stamina = MAX_SPRINT_TIME;

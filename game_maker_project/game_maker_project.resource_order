@@ -16,6 +16,7 @@
     {"name":"snd_empty","order":1,"path":"sounds/snd_empty/snd_empty.yy",},
     {"name":"obj_target","order":3,"path":"objects/obj_target/obj_target.yy",},
     {"name":"obj_hitscan_bullet","order":5,"path":"objects/obj_hitscan_bullet/obj_hitscan_bullet.yy",},
+    {"name":"spr_reloading","order":1,"path":"sprites/spr_reloading/spr_reloading.yy",},
     {"name":"obj_enemy","order":2,"path":"objects/obj_enemy/obj_enemy.yy",},
     {"name":"spr_enemy_flower","order":3,"path":"sprites/spr_enemy_flower/spr_enemy_flower.yy",},
     {"name":"obj_proj_bullet","order":1,"path":"objects/obj_proj_bullet/obj_proj_bullet.yy",},

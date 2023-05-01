@@ -13,6 +13,10 @@ var map_tile_width = 10;
 var map_tile_height = 3;
 var density = 1;
 
+shader_set(shd_low_health);
+global.shd_health = shader_get_uniform(shd_low_health, "health");
+shader_set_uniform_f(global.shd_health, 1.0);
+
 global.map_tile_width = map_tile_width;
 audio_play_sound(snd_background_music, 1, true, 0.2);
 instance_create_layer(room_width, random(room_height), "SmokeLayer", obj_smoke);
