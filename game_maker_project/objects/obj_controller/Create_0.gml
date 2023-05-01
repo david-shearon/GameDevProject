@@ -13,6 +13,10 @@ var map_tile_width = 10;
 var map_tile_height = 3;
 var density = 1;
 
+shader_set(shd_low_health);
+global.shd_health = shader_get_uniform(shd_low_health, "health");
+shader_set_uniform_f(global.shd_health, 1.0);
+
 global.map_tile_width = map_tile_width;
 audio_play_sound(snd_background_music, 1, true, 0.2);
 instance_create_layer(room_width, random(room_height), "SmokeLayer", obj_smoke);
@@ -67,3 +71,7 @@ for (var i = 0; i < array_length(keys); i++) {
 // Make list of visited tiles
 global.visited_tiles = ds_list_create();
 ds_list_add(global.visited_tiles, new vector2(global.curr_tile_x, global.curr_tile_y));
+ds_list_add(global.visited_tiles, new vector2(global.curr_tile_x - 1, global.curr_tile_y));
+
+// Difficulty for spawning in enemies
+global.difficulty = 1;
