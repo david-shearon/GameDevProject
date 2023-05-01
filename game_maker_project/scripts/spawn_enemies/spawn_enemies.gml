@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function spawn_enemies(difficulty, spawn_dir){
+function spawn_enemies(difficulty, spawn_dir, is_boss){
 	var enemies = ds_map_keys_to_array(global.enemies);
 	
 	var total_weight = 0;
@@ -63,7 +63,13 @@ function spawn_enemies(difficulty, spawn_dir){
 			}
 	
 			// Spawn the enemy
-			instance_create_layer(pos_x, pos_y, "Instances", enemy);
+			var enemy_inst = instance_create_layer(pos_x, pos_y, "Instances", enemy);
+			
+			if (is_boss) {
+				enemy_inst.hp *= 2;
+				enemy_inst.spd *= 1.25;
+				enemy_inst.atk *= 1.5;
+			}
 		}
 	}
 }

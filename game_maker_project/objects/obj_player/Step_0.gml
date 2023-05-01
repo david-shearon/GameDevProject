@@ -65,7 +65,6 @@ playerHp = min(maxHp, playerHp + health_regen/room_speed);
 
 // Death Logic
 if(playerHp <= 0) {
-	shader_reset();
 	room_goto(GameOver)
 }
 

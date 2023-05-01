@@ -33,6 +33,7 @@
     {"name":"spawn_enemies","order":2,"path":"scripts/spawn_enemies/spawn_enemies.yy",},
     {"name":"obj_rat","order":4,"path":"objects/obj_rat/obj_rat.yy",},
     {"name":"obj_boar","order":3,"path":"objects/obj_boar/obj_boar.yy",},
+    {"name":"Win","order":2,"path":"rooms/Win/Win.yy",},
     {"name":"spr_enemy_boar_walk","order":2,"path":"sprites/spr_enemy_boar_walk/spr_enemy_boar_walk.yy",},
     {"name":"obj_armor","order":2,"path":"objects/obj_armor/obj_armor.yy",},
     {"name":"obj_generic_map","order":1,"path":"objects/obj_generic_map/obj_generic_map.yy",},

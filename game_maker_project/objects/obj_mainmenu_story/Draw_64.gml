@@ -20,3 +20,10 @@ if(room == GameOver) {
 	draw_text(room_width - 1375, room_height - 1000, "You Were Never Seen Again");
 	draw_text(room_width - 1350, room_height - 850,  "Press Enter To Try Again");
 }
+if(room == Win) {
+	audio_stop_sound(snd_footsteps)
+	draw_set_font(fnt_menu);
+	draw_set_color(c_white);
+	draw_text(room_width - 1450, room_height - 1000, "You Have Survived to Your Goal");
+	draw_text(room_width - 1400, room_height - 850,  "Press Enter to Play Again");
+}

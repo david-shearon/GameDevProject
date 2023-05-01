@@ -29,11 +29,12 @@ function map_change_helper(movement_dir){
 			break;
 		}
 	}
+	var is_boss = global.tile_map[global.curr_tile_x, global.curr_tile_y].tile == tileTypes.ALL_COBBLE;
 	
 	if (!isVisited) {
 		ds_list_add(global.visited_tiles, curr_pos);
 		global.difficulty++;
 		spawn_items(global.difficulty, movement_dir);
-		spawn_enemies(global.difficulty, movement_dir);
+		spawn_enemies(global.difficulty, movement_dir, is_boss);
 	}
 }
