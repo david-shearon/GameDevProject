@@ -10,6 +10,6 @@ weight = 3;
 
 function item_effect(player) {
 	with (player) {
-		health_regen += 1;
+		health_regen += .5;
 	}
 }
